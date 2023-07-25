@@ -1,0 +1,23 @@
+<configuration>
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{"yyyy-MM-dd HH:mm:ss.SSS"} - %method - %highlight(%-5level) %gray(|) %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>logs/mi_app.log</file> <!-- Ruta y nombre del archivo de registro -->
+        <encoder>
+            <pattern>%d{"yyyy-MM-dd HH:mm:ss.SSS"} - %method - %highlight(%-5level) %gray(|) %msg%n</pattern>
+            <highlight>
+                <color value="GREEN"  key="INFO" />
+                <color value="RED"  key="ERROR" />
+            </highlight>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="FILE" />
+    </root>
+</configuration>
