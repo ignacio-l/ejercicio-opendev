@@ -2,6 +2,8 @@ package com.opendev.Peugeot.service;
 
 import com.opendev.Peugeot.excepciones.AutoExistenteException;
 import com.opendev.Peugeot.excepciones.AutoInexistenteException;
+import com.opendev.Peugeot.excepciones.CantidadInvalidaException;
+import com.opendev.Peugeot.excepciones.MontoInvalidoException;
 import com.opendev.Peugeot.model.Auto;
 import com.opendev.Peugeot.repository.IAutoRepository;
 
@@ -19,9 +21,6 @@ import java.util.stream.Collectors;
 @Validated
 public class AutoService {
     private final IAutoRepository repositorio;
-
-
-
     @Autowired
     public AutoService(IAutoRepository repositorio) {
         this.repositorio = repositorio;
@@ -69,12 +68,63 @@ public class AutoService {
             return lista.get();
         }
     }
-
     public List<Auto> listaNoRep(List<Auto> lista) {
         List<Auto> listaOrdenada = lista.stream()
                 .distinct()
                 .collect(Collectors.toList());
         return listaOrdenada;
+    }
+
+    public String borrarAuto(Long id) throws AutoInexistenteException {
+        String mensaje = "El auto con el id " + id + " fue borrado.";
+        Optional<Auto> autoBuscado = repositorio.findById(id);
+        if (autoBuscado.isEmpty()){
+            throw new AutoInexistenteException(id);
+        } else {
+            repositorio.deleteById(id);
+        }
+        return mensaje;
+    }
+
+    public String modificarAuto(Auto auto) throws AutoInexistenteException {
+        String mensaje = "Auto modificado con exito";
+        Optional<Auto> autoAModificar = repositorio.findById(auto.getId());
+        if(autoAModificar.isEmpty()){
+            throw new AutoInexistenteException(auto.getId());
+        } else {
+            repositorio.save(auto);
+        }
+        return mensaje;
+    }
+
+    public String modificarStock(Long id, int cantidad) throws AutoInexistenteException, CantidadInvalidaException {
+        String mensaje = "Stock modificado con exito";
+        Optional<Auto> autoAModificar = repositorio.findById(id);
+        if(autoAModificar.isEmpty()){
+            throw new AutoInexistenteException(id);
+        } else if (cantidad < 0){
+            throw new CantidadInvalidaException();
+        }else{
+            Auto autoModificado = autoAModificar.get();
+            autoModificado.setUnidadesEnStock(cantidad);
+            repositorio.save(autoModificado);
+        }
+        return mensaje;
+    }
+
+    public String modificarPrecio(Long id, Long monto) throws AutoInexistenteException, MontoInvalidoException {
+        String mensaje = "Precio modificado con exito";
+        Optional<Auto> autoAModificar = repositorio.findById(id);
+        if(autoAModificar.isEmpty()){
+            throw new AutoInexistenteException(id);
+        } else if (monto < 0){
+            throw new MontoInvalidoException();
+        }else{
+            Auto autoModificado = autoAModificar.get();
+            autoModificado.setPrecio(monto);
+            repositorio.save(autoModificado);
+        }
+        return mensaje;
     }
     private List<Auto> filtrarConStock(List<Auto> listaAutos) {
         List<Auto> listaStock = listaAutos.stream()
@@ -86,5 +136,6 @@ public class AutoService {
         String autos = listaAutos.stream().map(e -> e.toString() + "\n").reduce("", String::concat);
         return autos;
     }
+
 
 }

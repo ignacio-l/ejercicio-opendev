@@ -31,8 +31,9 @@ public class Venta {
     }
     public LocalDateTime getFechaVenta() {return fechaVenta;}
     public double getMonto(){ return this.monto; }
+    public Long getIdAuto(){return this.auto.getId();}
     public String getStringFecha(){
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd MMMM yyyy");
         return this.fechaVenta.format(formatter);
     }
 
@@ -52,7 +53,7 @@ public class Venta {
     @Override
     public String toString() {
 
-        return "Se han vendido " + this.getCantidadVendida() + " unidades del vehiculo Marca: " + auto.getMarca() + " Modelo: " + auto.getModelo() + " Color: " + auto.getColor() + ", en la fecha: " + this.getStringFecha() + ".";
+        return "Se han vendido " + this.getCantidadVendida() + " unidades del vehiculo Marca: " + auto.getMarca() + " Modelo: " + auto.getModelo() + " Color: " + auto.getColor() + " por un monto de $" + this.getMonto() + ", en la fecha: " + this.getStringFecha() + ".";
     }
 
     public static class VentaBuilder{

@@ -29,3 +29,833 @@
 2023-07-25 19:53:31.712 - initServletBean - [34mINFO [0;39m [1;30m|[0;39m Completed initialization in 1 ms
 2023-07-25 19:53:33.764 - hacerVenta - [1;31mERROR[0;39m [1;30m|[0;39m hacerVentaNo existe el auto con id 8.
 2023-07-25 19:53:52.297 - hacerVenta - [1;31mERROR[0;39m [1;30m|[0;39m hacerVentaNo existe el auto con id 8.
+2023-07-25 20:04:08.462 - destroy - [34mINFO [0;39m [1;30m|[0;39m Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:04:08.463 - close - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Shutdown initiated...
+2023-07-25 20:04:08.466 - close - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Shutdown completed.
+2023-07-25 20:04:10.099 - logStarting - [34mINFO [0;39m [1;30m|[0;39m Starting PeugeotApplication using Java 20.0.1 with PID 29460 (/home/lutteri_i/IdeaProjects/Peugeot/target/classes started by lutteri_i in /home/lutteri_i/IdeaProjects/Peugeot)
+2023-07-25 20:04:10.101 - logStartupProfileInfo - [34mINFO [0;39m [1;30m|[0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-25 20:04:10.397 - registerRepositoriesIn - [34mINFO [0;39m [1;30m|[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-25 20:04:10.423 - registerRepositoriesIn - [34mINFO [0;39m [1;30m|[0;39m Finished Spring Data repository scanning in 22 ms. Found 2 JPA repository interfaces.
+2023-07-25 20:04:10.658 - initialize - [34mINFO [0;39m [1;30m|[0;39m Tomcat initialized with port(s): 8080 (http)
+2023-07-25 20:04:10.662 - log - [34mINFO [0;39m [1;30m|[0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:04:10.663 - log - [34mINFO [0;39m [1;30m|[0;39m Starting service [Tomcat]
+2023-07-25 20:04:10.663 - log - [34mINFO [0;39m [1;30m|[0;39m Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-07-25 20:04:10.700 - log - [34mINFO [0;39m [1;30m|[0;39m Initializing Spring embedded WebApplicationContext
+2023-07-25 20:04:10.700 - prepareWebApplicationContext - [34mINFO [0;39m [1;30m|[0;39m Root WebApplicationContext: initialization completed in 573 ms
+2023-07-25 20:04:10.774 - logPersistenceUnitInformation - [34mINFO [0;39m [1;30m|[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-25 20:04:10.793 - logVersion - [34mINFO [0;39m [1;30m|[0;39m HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-07-25 20:04:10.794 - <clinit> - [34mINFO [0;39m [1;30m|[0;39m HHH000406: Using bytecode reflection optimizer
+2023-07-25 20:04:10.842 - buildBytecodeProvider - [34mINFO [0;39m [1;30m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:04:10.905 - addTransformer - [34mINFO [0;39m [1;30m|[0;39m No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-25 20:04:10.913 - getConnection - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Starting...
+2023-07-25 20:04:14.584 - checkFailFast - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c6927f0
+2023-07-25 20:04:14.586 - getConnection - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Start completed.
+2023-07-25 20:04:14.910 - logSelectedDialect - [31mWARN [0;39m [1;30m|[0;39m HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-07-25 20:04:14.997 - buildBytecodeProvider - [34mINFO [0;39m [1;30m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:04:15.261 - initiateService - [34mINFO [0;39m [1;30m|[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-25 20:04:17.893 - buildNativeEntityManagerFactory - [34mINFO [0;39m [1;30m|[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:04:18.094 - openEntityManagerInViewInterceptor - [31mWARN [0;39m [1;30m|[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-25 20:04:18.260 - log - [34mINFO [0;39m [1;30m|[0;39m Starting ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:04:18.268 - start - [34mINFO [0;39m [1;30m|[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-25 20:04:18.273 - logStarted - [34mINFO [0;39m [1;30m|[0;39m Started PeugeotApplication in 8.42 seconds (process running for 8.701)
+2023-07-25 20:09:25.196 - destroy - [34mINFO [0;39m [1;30m|[0;39m Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:09:25.197 - close - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Shutdown initiated...
+2023-07-25 20:09:26.186 - close - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Shutdown completed.
+2023-07-25 20:09:27.342 - logStarting - [34mINFO [0;39m [1;30m|[0;39m Starting PeugeotApplication using Java 20.0.1 with PID 29944 (/home/lutteri_i/IdeaProjects/Peugeot/target/classes started by lutteri_i in /home/lutteri_i/IdeaProjects/Peugeot)
+2023-07-25 20:09:27.343 - logStartupProfileInfo - [34mINFO [0;39m [1;30m|[0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-25 20:09:27.644 - registerRepositoriesIn - [34mINFO [0;39m [1;30m|[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-25 20:09:27.671 - registerRepositoriesIn - [34mINFO [0;39m [1;30m|[0;39m Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
+2023-07-25 20:09:27.912 - initialize - [34mINFO [0;39m [1;30m|[0;39m Tomcat initialized with port(s): 8080 (http)
+2023-07-25 20:09:27.916 - log - [34mINFO [0;39m [1;30m|[0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:09:27.917 - log - [34mINFO [0;39m [1;30m|[0;39m Starting service [Tomcat]
+2023-07-25 20:09:27.918 - log - [34mINFO [0;39m [1;30m|[0;39m Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-07-25 20:09:27.956 - log - [34mINFO [0;39m [1;30m|[0;39m Initializing Spring embedded WebApplicationContext
+2023-07-25 20:09:27.956 - prepareWebApplicationContext - [34mINFO [0;39m [1;30m|[0;39m Root WebApplicationContext: initialization completed in 589 ms
+2023-07-25 20:09:28.030 - logPersistenceUnitInformation - [34mINFO [0;39m [1;30m|[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-25 20:09:28.049 - logVersion - [34mINFO [0;39m [1;30m|[0;39m HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-07-25 20:09:28.050 - <clinit> - [34mINFO [0;39m [1;30m|[0;39m HHH000406: Using bytecode reflection optimizer
+2023-07-25 20:09:28.102 - buildBytecodeProvider - [34mINFO [0;39m [1;30m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:09:28.171 - addTransformer - [34mINFO [0;39m [1;30m|[0;39m No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-25 20:09:28.180 - getConnection - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Starting...
+2023-07-25 20:09:31.745 - checkFailFast - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3688baab
+2023-07-25 20:09:31.748 - getConnection - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Start completed.
+2023-07-25 20:09:32.047 - logSelectedDialect - [31mWARN [0;39m [1;30m|[0;39m HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-07-25 20:09:32.130 - buildBytecodeProvider - [34mINFO [0;39m [1;30m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:09:32.414 - initiateService - [34mINFO [0;39m [1;30m|[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-25 20:09:35.409 - buildNativeEntityManagerFactory - [34mINFO [0;39m [1;30m|[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:09:35.622 - openEntityManagerInViewInterceptor - [31mWARN [0;39m [1;30m|[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-25 20:09:35.777 - log - [34mINFO [0;39m [1;30m|[0;39m Starting ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:09:35.785 - start - [34mINFO [0;39m [1;30m|[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-25 20:09:35.789 - logStarted - [34mINFO [0;39m [1;30m|[0;39m Started PeugeotApplication in 8.694 seconds (process running for 8.964)
+2023-07-25 20:09:48.835 - destroy - [34mINFO [0;39m [1;30m|[0;39m Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:09:48.837 - close - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Shutdown initiated...
+2023-07-25 20:09:50.864 - close - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Shutdown completed.
+2023-07-25 20:09:52.026 - logStarting - [34mINFO [0;39m [1;30m|[0;39m Starting PeugeotApplication using Java 20.0.1 with PID 30089 (/home/lutteri_i/IdeaProjects/Peugeot/target/classes started by lutteri_i in /home/lutteri_i/IdeaProjects/Peugeot)
+2023-07-25 20:09:52.028 - logStartupProfileInfo - [34mINFO [0;39m [1;30m|[0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-25 20:09:52.320 - registerRepositoriesIn - [34mINFO [0;39m [1;30m|[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-25 20:09:52.350 - registerRepositoriesIn - [34mINFO [0;39m [1;30m|[0;39m Finished Spring Data repository scanning in 26 ms. Found 2 JPA repository interfaces.
+2023-07-25 20:09:52.601 - initialize - [34mINFO [0;39m [1;30m|[0;39m Tomcat initialized with port(s): 8080 (http)
+2023-07-25 20:09:52.605 - log - [34mINFO [0;39m [1;30m|[0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:09:52.606 - log - [34mINFO [0;39m [1;30m|[0;39m Starting service [Tomcat]
+2023-07-25 20:09:52.606 - log - [34mINFO [0;39m [1;30m|[0;39m Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-07-25 20:09:52.642 - log - [34mINFO [0;39m [1;30m|[0;39m Initializing Spring embedded WebApplicationContext
+2023-07-25 20:09:52.642 - prepareWebApplicationContext - [34mINFO [0;39m [1;30m|[0;39m Root WebApplicationContext: initialization completed in 588 ms
+2023-07-25 20:09:52.715 - logPersistenceUnitInformation - [34mINFO [0;39m [1;30m|[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-25 20:09:52.735 - logVersion - [34mINFO [0;39m [1;30m|[0;39m HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-07-25 20:09:52.736 - <clinit> - [34mINFO [0;39m [1;30m|[0;39m HHH000406: Using bytecode reflection optimizer
+2023-07-25 20:09:52.792 - buildBytecodeProvider - [34mINFO [0;39m [1;30m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:09:52.862 - addTransformer - [34mINFO [0;39m [1;30m|[0;39m No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-25 20:09:52.871 - getConnection - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Starting...
+2023-07-25 20:09:55.883 - checkFailFast - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c6927f0
+2023-07-25 20:09:55.886 - getConnection - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Start completed.
+2023-07-25 20:09:56.217 - logSelectedDialect - [31mWARN [0;39m [1;30m|[0;39m HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-07-25 20:09:56.304 - buildBytecodeProvider - [34mINFO [0;39m [1;30m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:09:56.582 - initiateService - [34mINFO [0;39m [1;30m|[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-25 20:09:59.572 - buildNativeEntityManagerFactory - [34mINFO [0;39m [1;30m|[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:09:59.755 - openEntityManagerInViewInterceptor - [31mWARN [0;39m [1;30m|[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-25 20:09:59.914 - log - [34mINFO [0;39m [1;30m|[0;39m Starting ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:09:59.921 - start - [34mINFO [0;39m [1;30m|[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-25 20:09:59.925 - logStarted - [34mINFO [0;39m [1;30m|[0;39m Started PeugeotApplication in 8.139 seconds (process running for 8.404)
+2023-07-25 20:10:06.096 - destroy - [34mINFO [0;39m [1;30m|[0;39m Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:10:06.097 - close - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Shutdown initiated...
+2023-07-25 20:10:08.170 - close - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Shutdown completed.
+2023-07-25 20:10:09.311 - logStarting - [34mINFO [0;39m [1;30m|[0;39m Starting PeugeotApplication using Java 20.0.1 with PID 30222 (/home/lutteri_i/IdeaProjects/Peugeot/target/classes started by lutteri_i in /home/lutteri_i/IdeaProjects/Peugeot)
+2023-07-25 20:10:09.313 - logStartupProfileInfo - [34mINFO [0;39m [1;30m|[0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-25 20:10:09.620 - registerRepositoriesIn - [34mINFO [0;39m [1;30m|[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-25 20:10:09.647 - registerRepositoriesIn - [34mINFO [0;39m [1;30m|[0;39m Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
+2023-07-25 20:10:09.879 - initialize - [34mINFO [0;39m [1;30m|[0;39m Tomcat initialized with port(s): 8080 (http)
+2023-07-25 20:10:09.883 - log - [34mINFO [0;39m [1;30m|[0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:10:09.884 - log - [34mINFO [0;39m [1;30m|[0;39m Starting service [Tomcat]
+2023-07-25 20:10:09.884 - log - [34mINFO [0;39m [1;30m|[0;39m Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-07-25 20:10:09.922 - log - [34mINFO [0;39m [1;30m|[0;39m Initializing Spring embedded WebApplicationContext
+2023-07-25 20:10:09.923 - prepareWebApplicationContext - [34mINFO [0;39m [1;30m|[0;39m Root WebApplicationContext: initialization completed in 584 ms
+2023-07-25 20:10:09.994 - logPersistenceUnitInformation - [34mINFO [0;39m [1;30m|[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-25 20:10:10.012 - logVersion - [34mINFO [0;39m [1;30m|[0;39m HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-07-25 20:10:10.013 - <clinit> - [34mINFO [0;39m [1;30m|[0;39m HHH000406: Using bytecode reflection optimizer
+2023-07-25 20:10:10.067 - buildBytecodeProvider - [34mINFO [0;39m [1;30m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:10:10.133 - addTransformer - [34mINFO [0;39m [1;30m|[0;39m No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-25 20:10:10.142 - getConnection - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Starting...
+2023-07-25 20:10:13.291 - checkFailFast - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c6927f0
+2023-07-25 20:10:13.295 - getConnection - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Start completed.
+2023-07-25 20:10:13.624 - logSelectedDialect - [31mWARN [0;39m [1;30m|[0;39m HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-07-25 20:10:13.710 - buildBytecodeProvider - [34mINFO [0;39m [1;30m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:10:13.978 - initiateService - [34mINFO [0;39m [1;30m|[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-25 20:10:16.933 - buildNativeEntityManagerFactory - [34mINFO [0;39m [1;30m|[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:10:17.124 - openEntityManagerInViewInterceptor - [31mWARN [0;39m [1;30m|[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-25 20:10:17.276 - log - [34mINFO [0;39m [1;30m|[0;39m Starting ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:10:17.287 - start - [34mINFO [0;39m [1;30m|[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-25 20:10:17.292 - logStarted - [34mINFO [0;39m [1;30m|[0;39m Started PeugeotApplication in 8.234 seconds (process running for 8.513)
+2023-07-25 20:10:21.852 - destroy - [34mINFO [0;39m [1;30m|[0;39m Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:10:21.854 - close - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Shutdown initiated...
+2023-07-25 20:10:23.223 - close - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Shutdown completed.
+2023-07-25 20:10:24.397 - logStarting - [34mINFO [0;39m [1;30m|[0;39m Starting PeugeotApplication using Java 20.0.1 with PID 30362 (/home/lutteri_i/IdeaProjects/Peugeot/target/classes started by lutteri_i in /home/lutteri_i/IdeaProjects/Peugeot)
+2023-07-25 20:10:24.399 - logStartupProfileInfo - [34mINFO [0;39m [1;30m|[0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-25 20:10:24.683 - registerRepositoriesIn - [34mINFO [0;39m [1;30m|[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-25 20:10:24.709 - registerRepositoriesIn - [34mINFO [0;39m [1;30m|[0;39m Finished Spring Data repository scanning in 22 ms. Found 2 JPA repository interfaces.
+2023-07-25 20:10:24.938 - initialize - [34mINFO [0;39m [1;30m|[0;39m Tomcat initialized with port(s): 8080 (http)
+2023-07-25 20:10:24.941 - log - [34mINFO [0;39m [1;30m|[0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:10:24.942 - log - [34mINFO [0;39m [1;30m|[0;39m Starting service [Tomcat]
+2023-07-25 20:10:24.942 - log - [34mINFO [0;39m [1;30m|[0;39m Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-07-25 20:10:24.977 - log - [34mINFO [0;39m [1;30m|[0;39m Initializing Spring embedded WebApplicationContext
+2023-07-25 20:10:24.977 - prepareWebApplicationContext - [34mINFO [0;39m [1;30m|[0;39m Root WebApplicationContext: initialization completed in 551 ms
+2023-07-25 20:10:25.044 - logPersistenceUnitInformation - [34mINFO [0;39m [1;30m|[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-25 20:10:25.063 - logVersion - [34mINFO [0;39m [1;30m|[0;39m HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-07-25 20:10:25.064 - <clinit> - [34mINFO [0;39m [1;30m|[0;39m HHH000406: Using bytecode reflection optimizer
+2023-07-25 20:10:25.117 - buildBytecodeProvider - [34mINFO [0;39m [1;30m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:10:25.179 - addTransformer - [34mINFO [0;39m [1;30m|[0;39m No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-25 20:10:25.187 - getConnection - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Starting...
+2023-07-25 20:10:28.241 - checkFailFast - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c6927f0
+2023-07-25 20:10:28.244 - getConnection - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Start completed.
+2023-07-25 20:10:28.574 - logSelectedDialect - [31mWARN [0;39m [1;30m|[0;39m HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-07-25 20:10:28.653 - buildBytecodeProvider - [34mINFO [0;39m [1;30m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:10:28.928 - initiateService - [34mINFO [0;39m [1;30m|[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-25 20:10:31.830 - buildNativeEntityManagerFactory - [34mINFO [0;39m [1;30m|[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:10:32.023 - openEntityManagerInViewInterceptor - [31mWARN [0;39m [1;30m|[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-25 20:10:32.172 - log - [34mINFO [0;39m [1;30m|[0;39m Starting ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:10:32.179 - start - [34mINFO [0;39m [1;30m|[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-25 20:10:32.184 - logStarted - [34mINFO [0;39m [1;30m|[0;39m Started PeugeotApplication in 8.05 seconds (process running for 8.351)
+2023-07-25 20:10:42.467 - destroy - [34mINFO [0;39m [1;30m|[0;39m Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:10:42.468 - close - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Shutdown initiated...
+2023-07-25 20:10:44.214 - close - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Shutdown completed.
+2023-07-25 20:10:45.378 - logStarting - [34mINFO [0;39m [1;30m|[0;39m Starting PeugeotApplication using Java 20.0.1 with PID 30497 (/home/lutteri_i/IdeaProjects/Peugeot/target/classes started by lutteri_i in /home/lutteri_i/IdeaProjects/Peugeot)
+2023-07-25 20:10:45.380 - logStartupProfileInfo - [34mINFO [0;39m [1;30m|[0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-25 20:10:45.681 - registerRepositoriesIn - [34mINFO [0;39m [1;30m|[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-25 20:10:45.709 - registerRepositoriesIn - [34mINFO [0;39m [1;30m|[0;39m Finished Spring Data repository scanning in 24 ms. Found 2 JPA repository interfaces.
+2023-07-25 20:10:45.940 - initialize - [34mINFO [0;39m [1;30m|[0;39m Tomcat initialized with port(s): 8080 (http)
+2023-07-25 20:10:45.943 - log - [34mINFO [0;39m [1;30m|[0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:10:45.944 - log - [34mINFO [0;39m [1;30m|[0;39m Starting service [Tomcat]
+2023-07-25 20:10:45.945 - log - [34mINFO [0;39m [1;30m|[0;39m Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-07-25 20:10:45.993 - log - [34mINFO [0;39m [1;30m|[0;39m Initializing Spring embedded WebApplicationContext
+2023-07-25 20:10:45.994 - prepareWebApplicationContext - [34mINFO [0;39m [1;30m|[0;39m Root WebApplicationContext: initialization completed in 587 ms
+2023-07-25 20:10:46.067 - logPersistenceUnitInformation - [34mINFO [0;39m [1;30m|[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-25 20:10:46.086 - logVersion - [34mINFO [0;39m [1;30m|[0;39m HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-07-25 20:10:46.087 - <clinit> - [34mINFO [0;39m [1;30m|[0;39m HHH000406: Using bytecode reflection optimizer
+2023-07-25 20:10:46.143 - buildBytecodeProvider - [34mINFO [0;39m [1;30m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:10:46.209 - addTransformer - [34mINFO [0;39m [1;30m|[0;39m No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-25 20:10:46.217 - getConnection - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Starting...
+2023-07-25 20:10:50.155 - checkFailFast - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45e11627
+2023-07-25 20:10:50.158 - getConnection - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Start completed.
+2023-07-25 20:10:50.488 - logSelectedDialect - [31mWARN [0;39m [1;30m|[0;39m HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-07-25 20:10:50.574 - buildBytecodeProvider - [34mINFO [0;39m [1;30m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:10:50.847 - initiateService - [34mINFO [0;39m [1;30m|[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-25 20:10:53.846 - buildNativeEntityManagerFactory - [34mINFO [0;39m [1;30m|[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:10:54.046 - openEntityManagerInViewInterceptor - [31mWARN [0;39m [1;30m|[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-25 20:10:54.204 - log - [34mINFO [0;39m [1;30m|[0;39m Starting ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:10:54.211 - start - [34mINFO [0;39m [1;30m|[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-25 20:10:54.216 - logStarted - [34mINFO [0;39m [1;30m|[0;39m Started PeugeotApplication in 9.09 seconds (process running for 9.38)
+2023-07-25 20:10:55.491 - destroy - [34mINFO [0;39m [1;30m|[0;39m Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:10:55.492 - close - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Shutdown initiated...
+2023-07-25 20:10:57.761 - close - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Shutdown completed.
+2023-07-25 20:10:58.947 - logStarting - [34mINFO [0;39m [1;30m|[0;39m Starting PeugeotApplication using Java 20.0.1 with PID 30639 (/home/lutteri_i/IdeaProjects/Peugeot/target/classes started by lutteri_i in /home/lutteri_i/IdeaProjects/Peugeot)
+2023-07-25 20:10:58.948 - logStartupProfileInfo - [34mINFO [0;39m [1;30m|[0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-25 20:10:59.250 - registerRepositoriesIn - [34mINFO [0;39m [1;30m|[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-25 20:10:59.277 - registerRepositoriesIn - [34mINFO [0;39m [1;30m|[0;39m Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
+2023-07-25 20:10:59.513 - initialize - [34mINFO [0;39m [1;30m|[0;39m Tomcat initialized with port(s): 8080 (http)
+2023-07-25 20:10:59.517 - log - [34mINFO [0;39m [1;30m|[0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:10:59.518 - log - [34mINFO [0;39m [1;30m|[0;39m Starting service [Tomcat]
+2023-07-25 20:10:59.519 - log - [34mINFO [0;39m [1;30m|[0;39m Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-07-25 20:10:59.565 - log - [34mINFO [0;39m [1;30m|[0;39m Initializing Spring embedded WebApplicationContext
+2023-07-25 20:10:59.565 - prepareWebApplicationContext - [34mINFO [0;39m [1;30m|[0;39m Root WebApplicationContext: initialization completed in 591 ms
+2023-07-25 20:10:59.638 - logPersistenceUnitInformation - [34mINFO [0;39m [1;30m|[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-25 20:10:59.656 - logVersion - [34mINFO [0;39m [1;30m|[0;39m HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-07-25 20:10:59.657 - <clinit> - [34mINFO [0;39m [1;30m|[0;39m HHH000406: Using bytecode reflection optimizer
+2023-07-25 20:10:59.714 - buildBytecodeProvider - [34mINFO [0;39m [1;30m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:10:59.782 - addTransformer - [34mINFO [0;39m [1;30m|[0;39m No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-25 20:10:59.791 - getConnection - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Starting...
+2023-07-25 20:11:02.955 - checkFailFast - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5b3518e1
+2023-07-25 20:11:02.958 - getConnection - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Start completed.
+2023-07-25 20:11:03.391 - logSelectedDialect - [31mWARN [0;39m [1;30m|[0;39m HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-07-25 20:11:03.475 - buildBytecodeProvider - [34mINFO [0;39m [1;30m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:11:03.747 - initiateService - [34mINFO [0;39m [1;30m|[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-25 20:11:06.851 - buildNativeEntityManagerFactory - [34mINFO [0;39m [1;30m|[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:11:07.035 - openEntityManagerInViewInterceptor - [31mWARN [0;39m [1;30m|[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-25 20:11:07.193 - log - [34mINFO [0;39m [1;30m|[0;39m Starting ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:11:07.201 - start - [34mINFO [0;39m [1;30m|[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-25 20:11:07.205 - logStarted - [34mINFO [0;39m [1;30m|[0;39m Started PeugeotApplication in 8.52 seconds (process running for 8.808)
+2023-07-25 20:15:45.678 - destroy - [34mINFO [0;39m [1;30m|[0;39m Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:15:45.679 - close - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Shutdown initiated...
+2023-07-25 20:15:49.249 - close - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Shutdown completed.
+2023-07-25 20:19:47.028 - logStarting - [34mINFO [0;39m [1;30m|[0;39m Starting PeugeotApplication using Java 20.0.1 with PID 31433 (/home/lutteri_i/IdeaProjects/Peugeot/target/classes started by lutteri_i in /home/lutteri_i/IdeaProjects/Peugeot)
+2023-07-25 20:19:47.030 - logStartupProfileInfo - [34mINFO [0;39m [1;30m|[0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-25 20:19:47.340 - registerRepositoriesIn - [34mINFO [0;39m [1;30m|[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-25 20:19:47.366 - registerRepositoriesIn - [34mINFO [0;39m [1;30m|[0;39m Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
+2023-07-25 20:19:47.607 - initialize - [34mINFO [0;39m [1;30m|[0;39m Tomcat initialized with port(s): 8080 (http)
+2023-07-25 20:19:47.611 - log - [34mINFO [0;39m [1;30m|[0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:19:47.612 - log - [34mINFO [0;39m [1;30m|[0;39m Starting service [Tomcat]
+2023-07-25 20:19:47.612 - log - [34mINFO [0;39m [1;30m|[0;39m Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-07-25 20:19:47.650 - log - [34mINFO [0;39m [1;30m|[0;39m Initializing Spring embedded WebApplicationContext
+2023-07-25 20:19:47.650 - prepareWebApplicationContext - [34mINFO [0;39m [1;30m|[0;39m Root WebApplicationContext: initialization completed in 590 ms
+2023-07-25 20:19:47.725 - logPersistenceUnitInformation - [34mINFO [0;39m [1;30m|[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-25 20:19:47.744 - logVersion - [34mINFO [0;39m [1;30m|[0;39m HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-07-25 20:19:47.745 - <clinit> - [34mINFO [0;39m [1;30m|[0;39m HHH000406: Using bytecode reflection optimizer
+2023-07-25 20:19:47.800 - buildBytecodeProvider - [34mINFO [0;39m [1;30m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:19:47.865 - addTransformer - [34mINFO [0;39m [1;30m|[0;39m No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-25 20:19:47.873 - getConnection - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Starting...
+2023-07-25 20:19:51.753 - checkFailFast - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@cd5ff55
+2023-07-25 20:19:51.756 - getConnection - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Start completed.
+2023-07-25 20:19:52.085 - logSelectedDialect - [31mWARN [0;39m [1;30m|[0;39m HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-07-25 20:19:52.170 - buildBytecodeProvider - [34mINFO [0;39m [1;30m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:19:52.443 - initiateService - [34mINFO [0;39m [1;30m|[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-25 20:19:55.546 - buildNativeEntityManagerFactory - [34mINFO [0;39m [1;30m|[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:19:55.739 - openEntityManagerInViewInterceptor - [31mWARN [0;39m [1;30m|[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-25 20:19:55.902 - log - [34mINFO [0;39m [1;30m|[0;39m Starting ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:19:55.909 - start - [34mINFO [0;39m [1;30m|[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-25 20:19:55.914 - logStarted - [34mINFO [0;39m [1;30m|[0;39m Started PeugeotApplication in 9.132 seconds (process running for 9.419)
+2023-07-25 20:20:21.816 - destroy - [34mINFO [0;39m [1;30m|[0;39m Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:20:21.818 - close - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Shutdown initiated...
+2023-07-25 20:20:23.085 - close - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Shutdown completed.
+2023-07-25 20:20:25.636 - logStarting - [34mINFO [0;39m [1;30m|[0;39m Starting PeugeotApplication using Java 20.0.1 with PID 31662 (/home/lutteri_i/IdeaProjects/Peugeot/target/classes started by lutteri_i in /home/lutteri_i/IdeaProjects/Peugeot)
+2023-07-25 20:20:25.637 - logStartupProfileInfo - [34mINFO [0;39m [1;30m|[0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-25 20:20:25.929 - registerRepositoriesIn - [34mINFO [0;39m [1;30m|[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-25 20:20:25.958 - registerRepositoriesIn - [34mINFO [0;39m [1;30m|[0;39m Finished Spring Data repository scanning in 25 ms. Found 2 JPA repository interfaces.
+2023-07-25 20:20:26.196 - initialize - [34mINFO [0;39m [1;30m|[0;39m Tomcat initialized with port(s): 8080 (http)
+2023-07-25 20:20:26.200 - log - [34mINFO [0;39m [1;30m|[0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:20:26.201 - log - [34mINFO [0;39m [1;30m|[0;39m Starting service [Tomcat]
+2023-07-25 20:20:26.201 - log - [34mINFO [0;39m [1;30m|[0;39m Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-07-25 20:20:26.237 - log - [34mINFO [0;39m [1;30m|[0;39m Initializing Spring embedded WebApplicationContext
+2023-07-25 20:20:26.238 - prepareWebApplicationContext - [34mINFO [0;39m [1;30m|[0;39m Root WebApplicationContext: initialization completed in 579 ms
+2023-07-25 20:20:26.316 - logPersistenceUnitInformation - [34mINFO [0;39m [1;30m|[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-25 20:20:26.337 - logVersion - [34mINFO [0;39m [1;30m|[0;39m HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-07-25 20:20:26.338 - <clinit> - [34mINFO [0;39m [1;30m|[0;39m HHH000406: Using bytecode reflection optimizer
+2023-07-25 20:20:26.387 - buildBytecodeProvider - [34mINFO [0;39m [1;30m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:20:26.456 - addTransformer - [34mINFO [0;39m [1;30m|[0;39m No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-25 20:20:26.464 - getConnection - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Starting...
+2023-07-25 20:20:29.436 - checkFailFast - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c6927f0
+2023-07-25 20:20:29.440 - getConnection - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Start completed.
+2023-07-25 20:20:29.768 - logSelectedDialect - [31mWARN [0;39m [1;30m|[0;39m HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-07-25 20:20:29.860 - buildBytecodeProvider - [34mINFO [0;39m [1;30m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:20:30.143 - initiateService - [34mINFO [0;39m [1;30m|[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-25 20:20:34.101 - buildNativeEntityManagerFactory - [34mINFO [0;39m [1;30m|[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:20:34.302 - openEntityManagerInViewInterceptor - [31mWARN [0;39m [1;30m|[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-25 20:20:34.455 - log - [34mINFO [0;39m [1;30m|[0;39m Starting ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:20:34.462 - start - [34mINFO [0;39m [1;30m|[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-25 20:20:34.467 - logStarted - [34mINFO [0;39m [1;30m|[0;39m Started PeugeotApplication in 9.101 seconds (process running for 9.444)
+2023-07-25 20:20:36.738 - log - [34mINFO [0;39m [1;30m|[0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-25 20:20:36.738 - initServletBean - [34mINFO [0;39m [1;30m|[0;39m Initializing Servlet 'dispatcherServlet'
+2023-07-25 20:20:36.739 - initServletBean - [34mINFO [0;39m [1;30m|[0;39m Completed initialization in 0 ms
+2023-07-25 20:20:38.959 - hacerVenta - [1;31mERROR[0;39m [1;30m|[0;39m hacerVentaNo existe el auto con id 8.
+2023-07-25 20:21:17.591 - destroy - [34mINFO [0;39m [1;30m|[0;39m Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:21:17.593 - close - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Shutdown initiated...
+2023-07-25 20:21:21.030 - close - [34mINFO [0;39m [1;30m|[0;39m HikariPool-1 - Shutdown completed.
+2023-07-25 20:21:22.239 - logStarting - [34mINFO [0;39m [36m|[0;39m Starting PeugeotApplication using Java 20.0.1 with PID 31829 (/home/lutteri_i/IdeaProjects/Peugeot/target/classes started by lutteri_i in /home/lutteri_i/IdeaProjects/Peugeot)
+2023-07-25 20:21:22.241 - logStartupProfileInfo - [34mINFO [0;39m [36m|[0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-25 20:21:22.532 - registerRepositoriesIn - [34mINFO [0;39m [36m|[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-25 20:21:22.558 - registerRepositoriesIn - [34mINFO [0;39m [36m|[0;39m Finished Spring Data repository scanning in 22 ms. Found 2 JPA repository interfaces.
+2023-07-25 20:21:22.796 - initialize - [34mINFO [0;39m [36m|[0;39m Tomcat initialized with port(s): 8080 (http)
+2023-07-25 20:21:22.800 - log - [34mINFO [0;39m [36m|[0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:21:22.801 - log - [34mINFO [0;39m [36m|[0;39m Starting service [Tomcat]
+2023-07-25 20:21:22.801 - log - [34mINFO [0;39m [36m|[0;39m Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-07-25 20:21:22.848 - log - [34mINFO [0;39m [36m|[0;39m Initializing Spring embedded WebApplicationContext
+2023-07-25 20:21:22.849 - prepareWebApplicationContext - [34mINFO [0;39m [36m|[0;39m Root WebApplicationContext: initialization completed in 580 ms
+2023-07-25 20:21:22.924 - logPersistenceUnitInformation - [34mINFO [0;39m [36m|[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-25 20:21:22.945 - logVersion - [34mINFO [0;39m [36m|[0;39m HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-07-25 20:21:22.946 - <clinit> - [34mINFO [0;39m [36m|[0;39m HHH000406: Using bytecode reflection optimizer
+2023-07-25 20:21:22.997 - buildBytecodeProvider - [34mINFO [0;39m [36m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:21:23.069 - addTransformer - [34mINFO [0;39m [36m|[0;39m No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-25 20:21:23.077 - getConnection - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Starting...
+2023-07-25 20:21:26.039 - checkFailFast - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3973b6d4
+2023-07-25 20:21:26.043 - getConnection - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Start completed.
+2023-07-25 20:21:26.401 - logSelectedDialect - [31mWARN [0;39m [36m|[0;39m HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-07-25 20:21:26.488 - buildBytecodeProvider - [34mINFO [0;39m [36m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:21:26.758 - initiateService - [34mINFO [0;39m [36m|[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-25 20:21:29.551 - buildNativeEntityManagerFactory - [34mINFO [0;39m [36m|[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:21:29.746 - openEntityManagerInViewInterceptor - [31mWARN [0;39m [36m|[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-25 20:21:29.902 - log - [34mINFO [0;39m [36m|[0;39m Starting ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:21:29.909 - start - [34mINFO [0;39m [36m|[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-25 20:21:29.914 - logStarted - [34mINFO [0;39m [36m|[0;39m Started PeugeotApplication in 7.934 seconds (process running for 8.205)
+2023-07-25 20:21:42.859 - destroy - [34mINFO [0;39m [36m|[0;39m Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:21:42.861 - close - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Shutdown initiated...
+2023-07-25 20:21:45.007 - close - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Shutdown completed.
+2023-07-25 20:21:46.203 - logStarting - [34mINFO [0;39m [36m|[0;39m Starting PeugeotApplication using Java 20.0.1 with PID 31958 (/home/lutteri_i/IdeaProjects/Peugeot/target/classes started by lutteri_i in /home/lutteri_i/IdeaProjects/Peugeot)
+2023-07-25 20:21:46.205 - logStartupProfileInfo - [34mINFO [0;39m [36m|[0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-25 20:21:46.503 - registerRepositoriesIn - [34mINFO [0;39m [36m|[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-25 20:21:46.530 - registerRepositoriesIn - [34mINFO [0;39m [36m|[0;39m Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
+2023-07-25 20:21:46.757 - initialize - [34mINFO [0;39m [36m|[0;39m Tomcat initialized with port(s): 8080 (http)
+2023-07-25 20:21:46.761 - log - [34mINFO [0;39m [36m|[0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:21:46.762 - log - [34mINFO [0;39m [36m|[0;39m Starting service [Tomcat]
+2023-07-25 20:21:46.762 - log - [34mINFO [0;39m [36m|[0;39m Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-07-25 20:21:46.807 - log - [34mINFO [0;39m [36m|[0;39m Initializing Spring embedded WebApplicationContext
+2023-07-25 20:21:46.808 - prepareWebApplicationContext - [34mINFO [0;39m [36m|[0;39m Root WebApplicationContext: initialization completed in 574 ms
+2023-07-25 20:21:46.893 - logPersistenceUnitInformation - [34mINFO [0;39m [36m|[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-25 20:21:46.912 - logVersion - [34mINFO [0;39m [36m|[0;39m HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-07-25 20:21:46.913 - <clinit> - [34mINFO [0;39m [36m|[0;39m HHH000406: Using bytecode reflection optimizer
+2023-07-25 20:21:46.966 - buildBytecodeProvider - [34mINFO [0;39m [36m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:21:47.041 - addTransformer - [34mINFO [0;39m [36m|[0;39m No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-25 20:21:47.049 - getConnection - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Starting...
+2023-07-25 20:21:50.026 - checkFailFast - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@26a45089
+2023-07-25 20:21:50.029 - getConnection - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Start completed.
+2023-07-25 20:21:50.358 - logSelectedDialect - [31mWARN [0;39m [36m|[0;39m HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-07-25 20:21:50.442 - buildBytecodeProvider - [34mINFO [0;39m [36m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:21:50.705 - initiateService - [34mINFO [0;39m [36m|[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-25 20:21:53.820 - buildNativeEntityManagerFactory - [34mINFO [0;39m [36m|[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:21:54.015 - openEntityManagerInViewInterceptor - [31mWARN [0;39m [36m|[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-25 20:21:54.166 - log - [34mINFO [0;39m [36m|[0;39m Starting ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:21:54.174 - start - [34mINFO [0;39m [36m|[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-25 20:21:54.179 - logStarted - [34mINFO [0;39m [36m|[0;39m Started PeugeotApplication in 8.249 seconds (process running for 8.531)
+2023-07-25 20:23:08.427 - destroy - [34mINFO [0;39m [36m|[0;39m Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:23:08.428 - close - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Shutdown initiated...
+2023-07-25 20:23:11.111 - close - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Shutdown completed.
+2023-07-25 20:23:12.837 - logStarting - [34mINFO [0;39m [36m|[0;39m Starting PeugeotApplication using Java 20.0.1 with PID 32129 (/home/lutteri_i/IdeaProjects/Peugeot/target/classes started by lutteri_i in /home/lutteri_i/IdeaProjects/Peugeot)
+2023-07-25 20:23:12.839 - logStartupProfileInfo - [34mINFO [0;39m [36m|[0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-25 20:23:13.131 - registerRepositoriesIn - [34mINFO [0;39m [36m|[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-25 20:23:13.157 - registerRepositoriesIn - [34mINFO [0;39m [36m|[0;39m Finished Spring Data repository scanning in 22 ms. Found 2 JPA repository interfaces.
+2023-07-25 20:23:13.389 - initialize - [34mINFO [0;39m [36m|[0;39m Tomcat initialized with port(s): 8080 (http)
+2023-07-25 20:23:13.393 - log - [34mINFO [0;39m [36m|[0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:23:13.394 - log - [34mINFO [0;39m [36m|[0;39m Starting service [Tomcat]
+2023-07-25 20:23:13.394 - log - [34mINFO [0;39m [36m|[0;39m Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-07-25 20:23:13.429 - log - [34mINFO [0;39m [36m|[0;39m Initializing Spring embedded WebApplicationContext
+2023-07-25 20:23:13.430 - prepareWebApplicationContext - [34mINFO [0;39m [36m|[0;39m Root WebApplicationContext: initialization completed in 565 ms
+2023-07-25 20:23:13.500 - logPersistenceUnitInformation - [34mINFO [0;39m [36m|[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-25 20:23:13.518 - logVersion - [34mINFO [0;39m [36m|[0;39m HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-07-25 20:23:13.519 - <clinit> - [34mINFO [0;39m [36m|[0;39m HHH000406: Using bytecode reflection optimizer
+2023-07-25 20:23:13.572 - buildBytecodeProvider - [34mINFO [0;39m [36m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:23:13.635 - addTransformer - [34mINFO [0;39m [36m|[0;39m No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-25 20:23:13.642 - getConnection - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Starting...
+2023-07-25 20:23:16.638 - checkFailFast - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4fe2dd02
+2023-07-25 20:23:16.641 - getConnection - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Start completed.
+2023-07-25 20:23:17.087 - logSelectedDialect - [31mWARN [0;39m [36m|[0;39m HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-07-25 20:23:17.166 - buildBytecodeProvider - [34mINFO [0;39m [36m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:23:17.449 - initiateService - [34mINFO [0;39m [36m|[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-25 20:23:20.247 - buildNativeEntityManagerFactory - [34mINFO [0;39m [36m|[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:23:20.435 - openEntityManagerInViewInterceptor - [31mWARN [0;39m [36m|[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-25 20:23:20.582 - log - [34mINFO [0;39m [36m|[0;39m Starting ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:23:20.592 - start - [34mINFO [0;39m [36m|[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-25 20:23:20.597 - logStarted - [34mINFO [0;39m [36m|[0;39m Started PeugeotApplication in 7.991 seconds (process running for 8.278)
+2023-07-25 20:23:33.032 - log - [34mINFO [0;39m [36m|[0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-25 20:23:33.032 - initServletBean - [34mINFO [0;39m [36m|[0;39m Initializing Servlet 'dispatcherServlet'
+2023-07-25 20:23:33.033 - initServletBean - [34mINFO [0;39m [36m|[0;39m Completed initialization in 1 ms
+2023-07-25 20:23:35.219 - hacerVenta - [1;31mERROR[0;39m [36m|[0;39m  No existe el auto con id 8.
+2023-07-25 20:23:55.467 - agregarAuto - [1;31mERROR[0;39m [36m|[0;39m El vehiculo ya existe en la base de datos.
+2023-07-25 20:34:33.547 - destroy - [34mINFO [0;39m [36m|[0;39m Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:34:33.548 - close - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Shutdown initiated...
+2023-07-25 20:34:33.550 - close - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Shutdown completed.
+2023-07-25 20:34:36.045 - logStarting - [34mINFO [0;39m [36m|[0;39m Starting PeugeotApplication using Java 20.0.1 with PID 32444 (/home/lutteri_i/IdeaProjects/Peugeot/target/classes started by lutteri_i in /home/lutteri_i/IdeaProjects/Peugeot)
+2023-07-25 20:34:36.047 - logStartupProfileInfo - [34mINFO [0;39m [36m|[0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-25 20:34:36.345 - registerRepositoriesIn - [34mINFO [0;39m [36m|[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-25 20:34:36.372 - registerRepositoriesIn - [34mINFO [0;39m [36m|[0;39m Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
+2023-07-25 20:34:36.605 - initialize - [34mINFO [0;39m [36m|[0;39m Tomcat initialized with port(s): 8080 (http)
+2023-07-25 20:34:36.609 - log - [34mINFO [0;39m [36m|[0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:34:36.610 - log - [34mINFO [0;39m [36m|[0;39m Starting service [Tomcat]
+2023-07-25 20:34:36.610 - log - [34mINFO [0;39m [36m|[0;39m Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-07-25 20:34:36.654 - log - [34mINFO [0;39m [36m|[0;39m Initializing Spring embedded WebApplicationContext
+2023-07-25 20:34:36.654 - prepareWebApplicationContext - [34mINFO [0;39m [36m|[0;39m Root WebApplicationContext: initialization completed in 581 ms
+2023-07-25 20:34:36.722 - logPersistenceUnitInformation - [34mINFO [0;39m [36m|[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-25 20:34:36.739 - logVersion - [34mINFO [0;39m [36m|[0;39m HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-07-25 20:34:36.740 - <clinit> - [34mINFO [0;39m [36m|[0;39m HHH000406: Using bytecode reflection optimizer
+2023-07-25 20:34:36.796 - buildBytecodeProvider - [34mINFO [0;39m [36m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:34:36.861 - addTransformer - [34mINFO [0;39m [36m|[0;39m No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-25 20:34:36.869 - getConnection - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Starting...
+2023-07-25 20:34:40.865 - checkFailFast - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@68b7bdcb
+2023-07-25 20:34:40.868 - getConnection - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Start completed.
+2023-07-25 20:34:41.266 - logSelectedDialect - [31mWARN [0;39m [36m|[0;39m HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-07-25 20:34:41.349 - buildBytecodeProvider - [34mINFO [0;39m [36m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:34:41.625 - initiateService - [34mINFO [0;39m [36m|[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-25 20:34:44.593 - buildNativeEntityManagerFactory - [34mINFO [0;39m [36m|[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:34:44.782 - openEntityManagerInViewInterceptor - [31mWARN [0;39m [36m|[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-25 20:34:44.929 - log - [34mINFO [0;39m [36m|[0;39m Starting ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:34:44.939 - start - [34mINFO [0;39m [36m|[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-25 20:34:44.944 - logStarted - [34mINFO [0;39m [36m|[0;39m Started PeugeotApplication in 9.137 seconds (process running for 9.451)
+2023-07-25 20:35:03.613 - log - [34mINFO [0;39m [36m|[0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-25 20:35:03.613 - initServletBean - [34mINFO [0;39m [36m|[0;39m Initializing Servlet 'dispatcherServlet'
+2023-07-25 20:35:03.614 - initServletBean - [34mINFO [0;39m [36m|[0;39m Completed initialization in 1 ms
+2023-07-25 20:35:05.784 - agregarAuto - [1;31mERROR[0;39m [36m|[0;39m El vehiculo ya existe en la base de datos.
+2023-07-25 20:41:41.132 - destroy - [34mINFO [0;39m [36m|[0;39m Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:41:41.133 - close - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Shutdown initiated...
+2023-07-25 20:41:42.586 - close - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Shutdown completed.
+2023-07-25 20:41:43.754 - reportFailure - %PARSER_ERROR[highlight] [36m|[0;39m Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@56303b57 - Failed to instantiate converter class [org.springframework.boot.logging.logback.HighlightingCompositeConverter] as a composite converter for keyword [highlight] ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.springframework.boot.logging.logback.HighlightingCompositeConverter
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@56303b57 - Failed to create converter for [%highlight] keyword
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@4b2a01d4 - Failed to instantiate converter class [org.springframework.boot.logging.logback.HighlightingCompositeConverter] as a composite converter for keyword [highlight] ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.springframework.boot.logging.logback.HighlightingCompositeConverter
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@4b2a01d4 - Failed to create converter for [%highlight] keyword
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:347)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:356)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.opendev.Peugeot.PeugeotApplication.main(PeugeotApplication.java:10)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@56303b57 - Failed to instantiate converter class [org.springframework.boot.logging.logback.HighlightingCompositeConverter] as a composite converter for keyword [highlight] ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.springframework.boot.logging.logback.HighlightingCompositeConverter
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@56303b57 - Failed to create converter for [%highlight] keyword
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@4b2a01d4 - Failed to instantiate converter class [org.springframework.boot.logging.logback.HighlightingCompositeConverter] as a composite converter for keyword [highlight] ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.springframework.boot.logging.logback.HighlightingCompositeConverter
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@4b2a01d4 - Failed to create converter for [%highlight] keyword
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reportConfigurationErrorsIfNecessary(LogbackLoggingSystem.java:260)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:247)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:187)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:332)
+	... 19 common frames omitted
+2023-07-25 20:41:59.899 - logStarting - [34mINFO [0;39m [36m|[0;39m Starting PeugeotApplication using Java 20.0.1 with PID 32750 (/home/lutteri_i/IdeaProjects/Peugeot/target/classes started by lutteri_i in /home/lutteri_i/IdeaProjects/Peugeot)
+2023-07-25 20:41:59.901 - logStartupProfileInfo - [34mINFO [0;39m [36m|[0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-25 20:42:00.208 - registerRepositoriesIn - [34mINFO [0;39m [36m|[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-25 20:42:00.234 - registerRepositoriesIn - [34mINFO [0;39m [36m|[0;39m Finished Spring Data repository scanning in 22 ms. Found 2 JPA repository interfaces.
+2023-07-25 20:42:00.462 - initialize - [34mINFO [0;39m [36m|[0;39m Tomcat initialized with port(s): 8080 (http)
+2023-07-25 20:42:00.466 - log - [34mINFO [0;39m [36m|[0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:42:00.467 - log - [34mINFO [0;39m [36m|[0;39m Starting service [Tomcat]
+2023-07-25 20:42:00.467 - log - [34mINFO [0;39m [36m|[0;39m Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-07-25 20:42:00.512 - log - [34mINFO [0;39m [36m|[0;39m Initializing Spring embedded WebApplicationContext
+2023-07-25 20:42:00.512 - prepareWebApplicationContext - [34mINFO [0;39m [36m|[0;39m Root WebApplicationContext: initialization completed in 582 ms
+2023-07-25 20:42:00.592 - logPersistenceUnitInformation - [34mINFO [0;39m [36m|[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-25 20:42:00.610 - logVersion - [34mINFO [0;39m [36m|[0;39m HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-07-25 20:42:00.611 - <clinit> - [34mINFO [0;39m [36m|[0;39m HHH000406: Using bytecode reflection optimizer
+2023-07-25 20:42:00.666 - buildBytecodeProvider - [34mINFO [0;39m [36m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:42:00.733 - addTransformer - [34mINFO [0;39m [36m|[0;39m No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-25 20:42:00.742 - getConnection - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Starting...
+2023-07-25 20:42:04.296 - checkFailFast - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@26a45089
+2023-07-25 20:42:04.299 - getConnection - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Start completed.
+2023-07-25 20:42:04.629 - logSelectedDialect - [31mWARN [0;39m [36m|[0;39m HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-07-25 20:42:04.730 - buildBytecodeProvider - [34mINFO [0;39m [36m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:42:05.009 - initiateService - [34mINFO [0;39m [36m|[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-25 20:42:07.885 - buildNativeEntityManagerFactory - [34mINFO [0;39m [36m|[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:42:08.087 - openEntityManagerInViewInterceptor - [31mWARN [0;39m [36m|[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-25 20:42:08.254 - log - [34mINFO [0;39m [36m|[0;39m Starting ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:42:08.262 - start - [34mINFO [0;39m [36m|[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-25 20:42:08.267 - logStarted - [34mINFO [0;39m [36m|[0;39m Started PeugeotApplication in 8.598 seconds (process running for 8.879)
+2023-07-25 20:43:55.997 - destroy - [34mINFO [0;39m [36m|[0;39m Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:43:55.999 - close - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Shutdown initiated...
+2023-07-25 20:43:59.394 - close - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Shutdown completed.
+2023-07-25 20:44:00.531 - logStarting - [34mINFO [0;39m [36m|[0;39m Starting PeugeotApplication using Java 20.0.1 with PID 32920 (/home/lutteri_i/IdeaProjects/Peugeot/target/classes started by lutteri_i in /home/lutteri_i/IdeaProjects/Peugeot)
+2023-07-25 20:44:00.532 - logStartupProfileInfo - [34mINFO [0;39m [36m|[0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-25 20:44:00.820 - registerRepositoriesIn - [34mINFO [0;39m [36m|[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-25 20:44:00.845 - registerRepositoriesIn - [34mINFO [0;39m [36m|[0;39m Finished Spring Data repository scanning in 21 ms. Found 2 JPA repository interfaces.
+2023-07-25 20:44:01.074 - initialize - [34mINFO [0;39m [36m|[0;39m Tomcat initialized with port(s): 8080 (http)
+2023-07-25 20:44:01.078 - log - [34mINFO [0;39m [36m|[0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:44:01.079 - log - [34mINFO [0;39m [36m|[0;39m Starting service [Tomcat]
+2023-07-25 20:44:01.080 - log - [34mINFO [0;39m [36m|[0;39m Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-07-25 20:44:01.117 - log - [34mINFO [0;39m [36m|[0;39m Initializing Spring embedded WebApplicationContext
+2023-07-25 20:44:01.117 - prepareWebApplicationContext - [34mINFO [0;39m [36m|[0;39m Root WebApplicationContext: initialization completed in 558 ms
+2023-07-25 20:44:01.189 - logPersistenceUnitInformation - [34mINFO [0;39m [36m|[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-25 20:44:01.206 - logVersion - [34mINFO [0;39m [36m|[0;39m HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-07-25 20:44:01.207 - <clinit> - [34mINFO [0;39m [36m|[0;39m HHH000406: Using bytecode reflection optimizer
+2023-07-25 20:44:01.261 - buildBytecodeProvider - [34mINFO [0;39m [36m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:44:01.324 - addTransformer - [34mINFO [0;39m [36m|[0;39m No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-25 20:44:01.332 - getConnection - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Starting...
+2023-07-25 20:44:04.413 - checkFailFast - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c6927f0
+2023-07-25 20:44:04.416 - getConnection - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Start completed.
+2023-07-25 20:44:04.747 - logSelectedDialect - [31mWARN [0;39m [36m|[0;39m HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-07-25 20:44:04.831 - buildBytecodeProvider - [34mINFO [0;39m [36m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:44:05.117 - initiateService - [34mINFO [0;39m [36m|[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-25 20:44:08.000 - buildNativeEntityManagerFactory - [34mINFO [0;39m [36m|[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:44:08.189 - openEntityManagerInViewInterceptor - [31mWARN [0;39m [36m|[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-25 20:44:08.350 - log - [34mINFO [0;39m [36m|[0;39m Starting ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:44:08.357 - start - [34mINFO [0;39m [36m|[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-25 20:44:08.363 - logStarted - [34mINFO [0;39m [36m|[0;39m Started PeugeotApplication in 8.102 seconds (process running for 8.373)
+2023-07-25 20:44:23.730 - destroy - [34mINFO [0;39m [36m|[0;39m Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:44:23.731 - close - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Shutdown initiated...
+2023-07-25 20:44:24.937 - close - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Shutdown completed.
+2023-07-25 20:44:26.028 - reportFailure - [1;31mERROR[0;39m [36m|[0;39m Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.model.processor.ModelInterpretationContext@6622fc65 - Problem while parsing [%d{"yyyy-MM-dd HH:mm:ss.SSS"} - %method - %highlight(%level){DEFAULT,%highlightColor(%level){RED:ERROR,GREEN:INFO} %magenta(|) %msg%n] java.lang.IllegalArgumentException: All tokens consumed but was expecting "}"
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:347)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:356)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.opendev.Peugeot.PeugeotApplication.main(PeugeotApplication.java:10)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.model.processor.ModelInterpretationContext@6622fc65 - Problem while parsing [%d{"yyyy-MM-dd HH:mm:ss.SSS"} - %method - %highlight(%level){DEFAULT,%highlightColor(%level){RED:ERROR,GREEN:INFO} %magenta(|) %msg%n] java.lang.IllegalArgumentException: All tokens consumed but was expecting "}"
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reportConfigurationErrorsIfNecessary(LogbackLoggingSystem.java:260)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:247)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:187)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:332)
+	... 19 common frames omitted
+2023-07-25 20:45:04.280 - logStarting - [34mINFO [0;39m [36m|[0;39m Starting PeugeotApplication using Java 20.0.1 with PID 33128 (/home/lutteri_i/IdeaProjects/Peugeot/target/classes started by lutteri_i in /home/lutteri_i/IdeaProjects/Peugeot)
+2023-07-25 20:45:04.281 - logStartupProfileInfo - [34mINFO [0;39m [36m|[0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-25 20:45:04.569 - registerRepositoriesIn - [34mINFO [0;39m [36m|[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-25 20:45:04.595 - registerRepositoriesIn - [34mINFO [0;39m [36m|[0;39m Finished Spring Data repository scanning in 22 ms. Found 2 JPA repository interfaces.
+2023-07-25 20:45:04.827 - initialize - [34mINFO [0;39m [36m|[0;39m Tomcat initialized with port(s): 8080 (http)
+2023-07-25 20:45:04.831 - log - [34mINFO [0;39m [36m|[0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:45:04.832 - log - [34mINFO [0;39m [36m|[0;39m Starting service [Tomcat]
+2023-07-25 20:45:04.833 - log - [34mINFO [0;39m [36m|[0;39m Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-07-25 20:45:04.873 - log - [34mINFO [0;39m [36m|[0;39m Initializing Spring embedded WebApplicationContext
+2023-07-25 20:45:04.874 - prepareWebApplicationContext - [34mINFO [0;39m [36m|[0;39m Root WebApplicationContext: initialization completed in 566 ms
+2023-07-25 20:45:04.950 - logPersistenceUnitInformation - [34mINFO [0;39m [36m|[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-25 20:45:04.969 - logVersion - [34mINFO [0;39m [36m|[0;39m HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-07-25 20:45:04.970 - <clinit> - [34mINFO [0;39m [36m|[0;39m HHH000406: Using bytecode reflection optimizer
+2023-07-25 20:45:05.025 - buildBytecodeProvider - [34mINFO [0;39m [36m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:45:05.091 - addTransformer - [34mINFO [0;39m [36m|[0;39m No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-25 20:45:05.099 - getConnection - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Starting...
+2023-07-25 20:45:08.841 - checkFailFast - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@19faedcc
+2023-07-25 20:45:08.844 - getConnection - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Start completed.
+2023-07-25 20:45:09.154 - logSelectedDialect - [31mWARN [0;39m [36m|[0;39m HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-07-25 20:45:09.239 - buildBytecodeProvider - [34mINFO [0;39m [36m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:45:09.514 - initiateService - [34mINFO [0;39m [36m|[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-25 20:45:11.925 - buildNativeEntityManagerFactory - [34mINFO [0;39m [36m|[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:45:12.109 - openEntityManagerInViewInterceptor - [31mWARN [0;39m [36m|[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-25 20:45:12.262 - log - [34mINFO [0;39m [36m|[0;39m Starting ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:45:12.269 - start - [34mINFO [0;39m [36m|[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-25 20:45:12.274 - logStarted - [34mINFO [0;39m [36m|[0;39m Started PeugeotApplication in 8.255 seconds (process running for 8.542)
+2023-07-25 20:46:12.780 - destroy - [34mINFO [0;39m [36m|[0;39m Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:46:12.781 - close - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Shutdown initiated...
+2023-07-25 20:46:16.083 - close - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Shutdown completed.
+2023-07-25 20:46:17.215 - logStarting - [34mINFO [0;39m [36m|[0;39m Starting PeugeotApplication using Java 20.0.1 with PID 33289 (/home/lutteri_i/IdeaProjects/Peugeot/target/classes started by lutteri_i in /home/lutteri_i/IdeaProjects/Peugeot)
+2023-07-25 20:46:17.216 - logStartupProfileInfo - [34mINFO [0;39m [36m|[0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-25 20:46:17.502 - registerRepositoriesIn - [34mINFO [0;39m [36m|[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-25 20:46:17.528 - registerRepositoriesIn - [34mINFO [0;39m [36m|[0;39m Finished Spring Data repository scanning in 22 ms. Found 2 JPA repository interfaces.
+2023-07-25 20:46:17.749 - initialize - [34mINFO [0;39m [36m|[0;39m Tomcat initialized with port(s): 8080 (http)
+2023-07-25 20:46:17.753 - log - [34mINFO [0;39m [36m|[0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:46:17.754 - log - [34mINFO [0;39m [36m|[0;39m Starting service [Tomcat]
+2023-07-25 20:46:17.754 - log - [34mINFO [0;39m [36m|[0;39m Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-07-25 20:46:17.799 - log - [34mINFO [0;39m [36m|[0;39m Initializing Spring embedded WebApplicationContext
+2023-07-25 20:46:17.800 - prepareWebApplicationContext - [34mINFO [0;39m [36m|[0;39m Root WebApplicationContext: initialization completed in 559 ms
+2023-07-25 20:46:17.874 - logPersistenceUnitInformation - [34mINFO [0;39m [36m|[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-25 20:46:17.892 - logVersion - [34mINFO [0;39m [36m|[0;39m HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-07-25 20:46:17.893 - <clinit> - [34mINFO [0;39m [36m|[0;39m HHH000406: Using bytecode reflection optimizer
+2023-07-25 20:46:17.941 - buildBytecodeProvider - [34mINFO [0;39m [36m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:46:18.004 - addTransformer - [34mINFO [0;39m [36m|[0;39m No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-25 20:46:18.011 - getConnection - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Starting...
+2023-07-25 20:46:21.118 - checkFailFast - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3a88f6fb
+2023-07-25 20:46:21.121 - getConnection - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Start completed.
+2023-07-25 20:46:21.451 - logSelectedDialect - [31mWARN [0;39m [36m|[0;39m HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-07-25 20:46:21.537 - buildBytecodeProvider - [34mINFO [0;39m [36m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:46:21.813 - initiateService - [34mINFO [0;39m [36m|[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-25 20:46:24.804 - buildNativeEntityManagerFactory - [34mINFO [0;39m [36m|[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:46:24.989 - openEntityManagerInViewInterceptor - [31mWARN [0;39m [36m|[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-25 20:46:25.147 - log - [34mINFO [0;39m [36m|[0;39m Starting ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:46:25.154 - start - [34mINFO [0;39m [36m|[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-25 20:46:25.159 - logStarted - [34mINFO [0;39m [36m|[0;39m Started PeugeotApplication in 8.189 seconds (process running for 8.466)
+2023-07-25 20:46:43.273 - destroy - [34mINFO [0;39m [36m|[0;39m Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:46:43.274 - close - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Shutdown initiated...
+2023-07-25 20:46:45.183 - close - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Shutdown completed.
+2023-07-25 20:46:46.307 - logStarting - [34mINFO [0;39m [36m|[0;39m Starting PeugeotApplication using Java 20.0.1 with PID 33428 (/home/lutteri_i/IdeaProjects/Peugeot/target/classes started by lutteri_i in /home/lutteri_i/IdeaProjects/Peugeot)
+2023-07-25 20:46:46.308 - logStartupProfileInfo - [34mINFO [0;39m [36m|[0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-25 20:46:46.608 - registerRepositoriesIn - [34mINFO [0;39m [36m|[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-25 20:46:46.635 - registerRepositoriesIn - [34mINFO [0;39m [36m|[0;39m Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
+2023-07-25 20:46:46.867 - initialize - [34mINFO [0;39m [36m|[0;39m Tomcat initialized with port(s): 8080 (http)
+2023-07-25 20:46:46.872 - log - [34mINFO [0;39m [36m|[0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:46:46.873 - log - [34mINFO [0;39m [36m|[0;39m Starting service [Tomcat]
+2023-07-25 20:46:46.873 - log - [34mINFO [0;39m [36m|[0;39m Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-07-25 20:46:46.919 - log - [34mINFO [0;39m [36m|[0;39m Initializing Spring embedded WebApplicationContext
+2023-07-25 20:46:46.920 - prepareWebApplicationContext - [34mINFO [0;39m [36m|[0;39m Root WebApplicationContext: initialization completed in 581 ms
+2023-07-25 20:46:46.999 - logPersistenceUnitInformation - [34mINFO [0;39m [36m|[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-25 20:46:47.017 - logVersion - [34mINFO [0;39m [36m|[0;39m HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-07-25 20:46:47.018 - <clinit> - [34mINFO [0;39m [36m|[0;39m HHH000406: Using bytecode reflection optimizer
+2023-07-25 20:46:47.066 - buildBytecodeProvider - [34mINFO [0;39m [36m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:46:47.138 - addTransformer - [34mINFO [0;39m [36m|[0;39m No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-25 20:46:47.146 - getConnection - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Starting...
+2023-07-25 20:46:50.199 - checkFailFast - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@283d3628
+2023-07-25 20:46:50.202 - getConnection - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Start completed.
+2023-07-25 20:46:50.531 - logSelectedDialect - [31mWARN [0;39m [36m|[0;39m HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-07-25 20:46:50.614 - buildBytecodeProvider - [34mINFO [0;39m [36m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:46:50.891 - initiateService - [34mINFO [0;39m [36m|[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-25 20:46:53.890 - buildNativeEntityManagerFactory - [34mINFO [0;39m [36m|[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:46:54.077 - openEntityManagerInViewInterceptor - [31mWARN [0;39m [36m|[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-25 20:46:54.233 - log - [34mINFO [0;39m [36m|[0;39m Starting ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:46:54.240 - start - [34mINFO [0;39m [36m|[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-25 20:46:54.245 - logStarted - [34mINFO [0;39m [36m|[0;39m Started PeugeotApplication in 8.201 seconds (process running for 8.473)
+2023-07-25 20:47:04.115 - destroy - [34mINFO [0;39m [36m|[0;39m Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:47:04.118 - close - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Shutdown initiated...
+2023-07-25 20:47:06.684 - close - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Shutdown completed.
+2023-07-25 20:47:07.827 - logStarting - [34mINFO [0;39m [36m|[0;39m Starting PeugeotApplication using Java 20.0.1 with PID 33562 (/home/lutteri_i/IdeaProjects/Peugeot/target/classes started by lutteri_i in /home/lutteri_i/IdeaProjects/Peugeot)
+2023-07-25 20:47:07.829 - logStartupProfileInfo - [34mINFO [0;39m [36m|[0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-25 20:47:08.124 - registerRepositoriesIn - [34mINFO [0;39m [36m|[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-25 20:47:08.151 - registerRepositoriesIn - [34mINFO [0;39m [36m|[0;39m Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
+2023-07-25 20:47:08.387 - initialize - [34mINFO [0;39m [36m|[0;39m Tomcat initialized with port(s): 8080 (http)
+2023-07-25 20:47:08.390 - log - [34mINFO [0;39m [36m|[0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:47:08.391 - log - [34mINFO [0;39m [36m|[0;39m Starting service [Tomcat]
+2023-07-25 20:47:08.391 - log - [34mINFO [0;39m [36m|[0;39m Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-07-25 20:47:08.428 - log - [34mINFO [0;39m [36m|[0;39m Initializing Spring embedded WebApplicationContext
+2023-07-25 20:47:08.429 - prepareWebApplicationContext - [34mINFO [0;39m [36m|[0;39m Root WebApplicationContext: initialization completed in 571 ms
+2023-07-25 20:47:08.502 - logPersistenceUnitInformation - [34mINFO [0;39m [36m|[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-25 20:47:08.520 - logVersion - [34mINFO [0;39m [36m|[0;39m HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-07-25 20:47:08.521 - <clinit> - [34mINFO [0;39m [36m|[0;39m HHH000406: Using bytecode reflection optimizer
+2023-07-25 20:47:08.575 - buildBytecodeProvider - [34mINFO [0;39m [36m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:47:08.639 - addTransformer - [34mINFO [0;39m [36m|[0;39m No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-25 20:47:08.647 - getConnection - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Starting...
+2023-07-25 20:47:11.499 - checkFailFast - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@57416e49
+2023-07-25 20:47:11.501 - getConnection - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Start completed.
+2023-07-25 20:47:11.833 - logSelectedDialect - [31mWARN [0;39m [36m|[0;39m HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-07-25 20:47:11.913 - buildBytecodeProvider - [34mINFO [0;39m [36m|[0;39m HHH000021: Bytecode provider name : bytebuddy
+2023-07-25 20:47:12.183 - initiateService - [34mINFO [0;39m [36m|[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-25 20:47:15.189 - buildNativeEntityManagerFactory - [34mINFO [0;39m [36m|[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:47:15.373 - openEntityManagerInViewInterceptor - [31mWARN [0;39m [36m|[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-25 20:47:15.530 - log - [34mINFO [0;39m [36m|[0;39m Starting ProtocolHandler ["http-nio-8080"]
+2023-07-25 20:47:15.537 - start - [34mINFO [0;39m [36m|[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-25 20:47:15.543 - logStarted - [34mINFO [0;39m [36m|[0;39m Started PeugeotApplication in 7.961 seconds (process running for 8.233)
+2023-07-25 20:48:30.204 - destroy - [34mINFO [0;39m [36m|[0;39m Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-25 20:48:30.205 - close - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Shutdown initiated...
+2023-07-25 20:48:31.969 - close - [34mINFO [0;39m [36m|[0;39m HikariPool-1 - Shutdown completed.
+2023-07-25 20:48:33.105 - logStarting - [34mINFO [0;39m (|2023-07-25 20:48:33.106 - logStartupProfileInfo - [34mINFO [0;39m (|2023-07-25 20:48:33.403 - registerRepositoriesIn - [34mINFO [0;39m (|2023-07-25 20:48:33.430 - registerRepositoriesIn - [34mINFO [0;39m (|2023-07-25 20:48:33.666 - initialize - [34mINFO [0;39m (|2023-07-25 20:48:33.670 - log - [34mINFO [0;39m (|2023-07-25 20:48:33.671 - log - [34mINFO [0;39m (|2023-07-25 20:48:33.672 - log - [34mINFO [0;39m (|2023-07-25 20:48:33.719 - log - [34mINFO [0;39m (|2023-07-25 20:48:33.719 - prepareWebApplicationContext - [34mINFO [0;39m (|2023-07-25 20:48:33.795 - logPersistenceUnitInformation - [34mINFO [0;39m (|2023-07-25 20:48:33.814 - logVersion - [34mINFO [0;39m (|2023-07-25 20:48:33.815 - <clinit> - [34mINFO [0;39m (|2023-07-25 20:48:33.898 - buildBytecodeProvider - [34mINFO [0;39m (|2023-07-25 20:48:33.966 - addTransformer - [34mINFO [0;39m (|2023-07-25 20:48:33.973 - getConnection - [34mINFO [0;39m (|2023-07-25 20:48:37.309 - checkFailFast - [34mINFO [0;39m (|2023-07-25 20:48:37.310 - getConnection - [34mINFO [0;39m (|2023-07-25 20:48:37.642 - logSelectedDialect - [31mWARN [0;39m (|2023-07-25 20:48:37.727 - buildBytecodeProvider - [34mINFO [0;39m (|2023-07-25 20:48:38.055 - initiateService - [34mINFO [0;39m (|2023-07-25 20:48:40.895 - buildNativeEntityManagerFactory - [34mINFO [0;39m (|2023-07-25 20:48:41.118 - openEntityManagerInViewInterceptor - [31mWARN [0;39m (|2023-07-25 20:48:41.282 - log - [34mINFO [0;39m (|2023-07-25 20:48:41.290 - start - [34mINFO [0;39m (|2023-07-25 20:48:41.295 - logStarted - [34mINFO [0;39m (|2023-07-25 20:56:25.814 - destroy - [34mINFO [0;39m (|2023-07-25 20:56:25.815 - close - [34mINFO [0;39m (|2023-07-25 20:56:27.327 - close - [34mINFO [0;39m (|2023-07-25 20:56:28.399 - logStarting - [34m[0;39m (|2023-07-25 20:56:28.401 - logStartupProfileInfo - [34m[0;39m (|2023-07-25 20:56:28.701 - registerRepositoriesIn - [34m[0;39m (|2023-07-25 20:56:28.728 - registerRepositoriesIn - [34m[0;39m (|2023-07-25 20:56:28.970 - initialize - [34m[0;39m (|2023-07-25 20:56:28.974 - log - [34m[0;39m (|2023-07-25 20:56:28.975 - log - [34m[0;39m (|2023-07-25 20:56:28.976 - log - [34m[0;39m (|2023-07-25 20:56:29.013 - log - [34m[0;39m (|2023-07-25 20:56:29.013 - prepareWebApplicationContext - [34m[0;39m (|2023-07-25 20:56:29.081 - logPersistenceUnitInformation - [34m[0;39m (|2023-07-25 20:56:29.099 - logVersion - [34m[0;39m (|2023-07-25 20:56:29.100 - <clinit> - [34m[0;39m (|2023-07-25 20:56:29.154 - buildBytecodeProvider - [34m[0;39m (|2023-07-25 20:56:29.220 - addTransformer - [34m[0;39m (|2023-07-25 20:56:29.227 - getConnection - [34m[0;39m (|2023-07-25 20:56:33.088 - checkFailFast - [34m[0;39m (|2023-07-25 20:56:33.091 - getConnection - [34m[0;39m (|2023-07-25 20:56:33.394 - logSelectedDialect - [31m[0;39m (|2023-07-25 20:56:33.479 - buildBytecodeProvider - [34m[0;39m (|2023-07-25 20:56:33.754 - initiateService - [34m[0;39m (|2023-07-25 20:56:36.855 - buildNativeEntityManagerFactory - [34m[0;39m (|2023-07-25 20:56:37.048 - openEntityManagerInViewInterceptor - [31m[0;39m (|2023-07-25 20:56:37.210 - log - [34m[0;39m (|2023-07-25 20:56:37.217 - start - [34m[0;39m (|2023-07-25 20:56:37.222 - logStarted - [34m[0;39m (|2023-07-25 20:57:05.027 - log - [34m[0;39m (|2023-07-25 20:57:05.027 - initServletBean - [34m[0;39m (|2023-07-25 20:57:05.028 - initServletBean - [34m[0;39m (|2023-07-25 20:57:07.161 - agregarAuto - [1;31m[0;39m (|2023-07-25 22:19:24.491 - destroy - [34m[0;39m (|2023-07-25 22:19:24.494 - close - [34m[0;39m (|2023-07-25 22:19:24.497 - close - [34m[0;39m (|2023-07-26 08:33:58.266 - logStarting - [34mINFO [0;39m (|2023-07-26 08:33:58.267 - logStartupProfileInfo - [34mINFO [0;39m (|2023-07-26 08:33:58.596 - registerRepositoriesIn - [34mINFO [0;39m (|2023-07-26 08:33:58.628 - registerRepositoriesIn - [34mINFO [0;39m (|2023-07-26 08:33:58.901 - initialize - [34mINFO [0;39m (|2023-07-26 08:33:58.906 - log - [34mINFO [0;39m (|2023-07-26 08:33:58.907 - log - [34mINFO [0;39m (|2023-07-26 08:33:58.907 - log - [34mINFO [0;39m (|2023-07-26 08:33:58.960 - log - [34mINFO [0;39m (|2023-07-26 08:33:58.961 - prepareWebApplicationContext - [34mINFO [0;39m (|2023-07-26 08:33:59.048 - logPersistenceUnitInformation - [34mINFO [0;39m (|2023-07-26 08:33:59.076 - logVersion - [34mINFO [0;39m (|2023-07-26 08:33:59.077 - <clinit> - [34mINFO [0;39m (|2023-07-26 08:33:59.150 - buildBytecodeProvider - [34mINFO [0;39m (|2023-07-26 08:33:59.233 - addTransformer - [34mINFO [0;39m (|2023-07-26 08:33:59.243 - getConnection - [34mINFO [0;39m (|2023-07-26 08:33:59.430 - checkFailFast - [34mINFO [0;39m (|2023-07-26 08:33:59.431 - getConnection - [34mINFO [0;39m (|2023-07-26 08:33:59.457 - logSelectedDialect - [31mWARN [0;39m (|2023-07-26 08:33:59.587 - buildBytecodeProvider - [34mINFO [0;39m (|2023-07-26 08:33:59.906 - initiateService - [34mINFO [0;39m (|2023-07-26 08:33:59.958 - buildNativeEntityManagerFactory - [34mINFO [0;39m (|2023-07-26 08:34:00.177 - openEntityManagerInViewInterceptor - [31mWARN [0;39m (|2023-07-26 08:34:00.332 - log - [34mINFO [0;39m (|2023-07-26 08:34:00.339 - start - [34mINFO [0;39m (|2023-07-26 08:34:00.344 - logStarted - [34mINFO [0;39m (|2023-07-26 08:34:12.713 - log - [34mINFO [0;39m (|2023-07-26 08:34:12.714 - initServletBean - [34mINFO [0;39m (|2023-07-26 08:34:12.715 - initServletBean - [34mINFO [0;39m (|2023-07-26 08:34:35.970 - destroy - [34mINFO [0;39m (|2023-07-26 08:34:35.972 - close - [34mINFO [0;39m (|2023-07-26 08:34:35.976 - close - [34mINFO [0;39m (|2023-07-26 08:34:50.417 - logStarting - [34mINFO [0;39m (|2023-07-26 08:34:50.419 - logStartupProfileInfo - [34mINFO [0;39m (|2023-07-26 08:34:50.721 - registerRepositoriesIn - [34mINFO [0;39m (|2023-07-26 08:34:50.748 - registerRepositoriesIn - [34mINFO [0;39m (|2023-07-26 08:34:50.984 - initialize - [34mINFO [0;39m (|2023-07-26 08:34:50.989 - log - [34mINFO [0;39m (|2023-07-26 08:34:50.990 - log - [34mINFO [0;39m (|2023-07-26 08:34:50.990 - log - [34mINFO [0;39m (|2023-07-26 08:34:51.025 - log - [34mINFO [0;39m (|2023-07-26 08:34:51.026 - prepareWebApplicationContext - [34mINFO [0;39m (|2023-07-26 08:34:51.096 - logPersistenceUnitInformation - [34mINFO [0;39m (|2023-07-26 08:34:51.114 - logVersion - [34mINFO [0;39m (|2023-07-26 08:34:51.115 - <clinit> - [34mINFO [0;39m (|2023-07-26 08:34:51.170 - buildBytecodeProvider - [34mINFO [0;39m (|2023-07-26 08:34:51.238 - addTransformer - [34mINFO [0;39m (|2023-07-26 08:34:51.246 - getConnection - [34mINFO [0;39m (|2023-07-26 08:34:51.414 - checkFailFast - [34mINFO [0;39m (|2023-07-26 08:34:51.415 - getConnection - [34mINFO [0;39m (|2023-07-26 08:34:51.439 - logSelectedDialect - [31mWARN [0;39m (|2023-07-26 08:34:51.535 - buildBytecodeProvider - [34mINFO [0;39m (|2023-07-26 08:34:51.848 - initiateService - [34mINFO [0;39m (|2023-07-26 08:34:51.894 - buildNativeEntityManagerFactory - [34mINFO [0;39m (|2023-07-26 08:34:52.089 - openEntityManagerInViewInterceptor - [31mWARN [0;39m (|2023-07-26 08:34:52.246 - log - [34mINFO [0;39m (|2023-07-26 08:34:52.253 - start - [34mINFO [0;39m (|2023-07-26 08:34:52.259 - logStarted - [34mINFO [0;39m (|2023-07-26 08:34:56.127 - log - [34mINFO [0;39m (|2023-07-26 08:34:56.127 - initServletBean - [34mINFO [0;39m (|2023-07-26 08:34:56.128 - initServletBean - [34mINFO [0;39m (|2023-07-26 08:39:21.485 - destroy - [34mINFO [0;39m (|2023-07-26 08:39:21.487 - close - [34mINFO [0;39m (|2023-07-26 08:39:21.490 - close - [34mINFO [0;39m (|2023-07-26 08:39:23.405 - logStarting - [34mINFO [0;39m (|2023-07-26 08:39:23.407 - logStartupProfileInfo - [34mINFO [0;39m (|2023-07-26 08:39:23.708 - registerRepositoriesIn - [34mINFO [0;39m (|2023-07-26 08:39:23.734 - registerRepositoriesIn - [34mINFO [0;39m (|2023-07-26 08:39:23.984 - initialize - [34mINFO [0;39m (|2023-07-26 08:39:23.989 - log - [34mINFO [0;39m (|2023-07-26 08:39:23.991 - log - [34mINFO [0;39m (|2023-07-26 08:39:23.991 - log - [34mINFO [0;39m (|2023-07-26 08:39:24.029 - log - [34mINFO [0;39m (|2023-07-26 08:39:24.029 - prepareWebApplicationContext - [34mINFO [0;39m (|2023-07-26 08:39:24.105 - logPersistenceUnitInformation - [34mINFO [0;39m (|2023-07-26 08:39:24.123 - logVersion - [34mINFO [0;39m (|2023-07-26 08:39:24.124 - <clinit> - [34mINFO [0;39m (|2023-07-26 08:39:24.180 - buildBytecodeProvider - [34mINFO [0;39m (|2023-07-26 08:39:24.246 - addTransformer - [34mINFO [0;39m (|2023-07-26 08:39:24.253 - getConnection - [34mINFO [0;39m (|2023-07-26 08:39:24.424 - checkFailFast - [34mINFO [0;39m (|2023-07-26 08:39:24.425 - getConnection - [34mINFO [0;39m (|2023-07-26 08:39:24.445 - logSelectedDialect - [31mWARN [0;39m (|2023-07-26 08:39:24.542 - buildBytecodeProvider - [34mINFO [0;39m (|2023-07-26 08:39:24.829 - initiateService - [34mINFO [0;39m (|2023-07-26 08:39:24.873 - buildNativeEntityManagerFactory - [34mINFO [0;39m (|2023-07-26 08:39:25.069 - openEntityManagerInViewInterceptor - [31mWARN [0;39m (|2023-07-26 08:39:25.222 - log - [34mINFO [0;39m (|2023-07-26 08:39:25.229 - start - [34mINFO [0;39m (|2023-07-26 08:39:25.234 - logStarted - [34mINFO [0;39m (|2023-07-26 08:39:30.621 - log - [34mINFO [0;39m (|2023-07-26 08:39:30.622 - initServletBean - [34mINFO [0;39m (|2023-07-26 08:39:30.622 - initServletBean - [34mINFO [0;39m (|2023-07-26 09:36:20.467 - destroy - [34mINFO [0;39m (|2023-07-26 09:36:20.469 - close - [34mINFO [0;39m (|2023-07-26 09:36:20.471 - close - [34mINFO [0;39m (|2023-07-26 09:36:22.506 - logStarting - [34mINFO [0;39m (|2023-07-26 09:36:22.507 - logStartupProfileInfo - [34mINFO [0;39m (|2023-07-26 09:36:22.805 - registerRepositoriesIn - [34mINFO [0;39m (|2023-07-26 09:36:22.833 - registerRepositoriesIn - [34mINFO [0;39m (|2023-07-26 09:36:23.077 - initialize - [34mINFO [0;39m (|2023-07-26 09:36:23.081 - log - [34mINFO [0;39m (|2023-07-26 09:36:23.082 - log - [34mINFO [0;39m (|2023-07-26 09:36:23.082 - log - [34mINFO [0;39m (|2023-07-26 09:36:23.122 - log - [34mINFO [0;39m (|2023-07-26 09:36:23.122 - prepareWebApplicationContext - [34mINFO [0;39m (|2023-07-26 09:36:23.195 - logPersistenceUnitInformation - [34mINFO [0;39m (|2023-07-26 09:36:23.213 - logVersion - [34mINFO [0;39m (|2023-07-26 09:36:23.214 - <clinit> - [34mINFO [0;39m (|2023-07-26 09:36:23.268 - buildBytecodeProvider - [34mINFO [0;39m (|2023-07-26 09:36:23.342 - addTransformer - [34mINFO [0;39m (|2023-07-26 09:36:23.353 - getConnection - [34mINFO [0;39m (|2023-07-26 09:36:23.547 - checkFailFast - [34mINFO [0;39m (|2023-07-26 09:36:23.549 - getConnection - [34mINFO [0;39m (|2023-07-26 09:36:23.570 - logSelectedDialect - [31mWARN [0;39m (|2023-07-26 09:36:23.654 - buildBytecodeProvider - [34mINFO [0;39m (|2023-07-26 09:36:23.950 - initiateService - [34mINFO [0;39m (|2023-07-26 09:36:23.999 - buildNativeEntityManagerFactory - [34mINFO [0;39m (|2023-07-26 09:36:24.190 - openEntityManagerInViewInterceptor - [31mWARN [0;39m (|2023-07-26 09:36:24.280 - refresh - [31mWARN [0;39m (|2023-07-26 09:36:24.281 - destroy - [34mINFO [0;39m (|2023-07-26 09:36:24.282 - close - [34mINFO [0;39m (|2023-07-26 09:36:24.285 - close - [34mINFO [0;39m (|2023-07-26 09:36:24.286 - log - [34mINFO [0;39m (|2023-07-26 09:36:24.294 - logMessage - [34mINFO [0;39m (|2023-07-26 09:36:24.302 - reportFailure - [1;31mERROR[0;39m (|org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'peugeotController' method 
+com.opendev.Peugeot.controller.PeugeotController#traerVentasDeAuto(Long)
+to {GET [/ventas/get]}: There is already 'peugeotController' bean method
+com.opendev.Peugeot.controller.PeugeotController#traerVentas() mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.opendev.Peugeot.PeugeotApplication.main(PeugeotApplication.java:10)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'peugeotController' method 
+com.opendev.Peugeot.controller.PeugeotController#traerVentasDeAuto(Long)
+to {GET [/ventas/get]}: There is already 'peugeotController' bean method
+com.opendev.Peugeot.controller.PeugeotController#traerVentas() mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:667)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:633)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:331)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:441)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:76)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:298)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:729)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:296)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:265)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:224)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:212)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:225)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1817)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	... 16 common frames omitted
+2023-07-26 09:38:00.684 - logStarting - [34mINFO [0;39m (|2023-07-26 09:38:00.685 - logStartupProfileInfo - [34mINFO [0;39m (|2023-07-26 09:38:00.986 - registerRepositoriesIn - [34mINFO [0;39m (|2023-07-26 09:38:01.012 - registerRepositoriesIn - [34mINFO [0;39m (|2023-07-26 09:38:01.250 - initialize - [34mINFO [0;39m (|2023-07-26 09:38:01.254 - log - [34mINFO [0;39m (|2023-07-26 09:38:01.255 - log - [34mINFO [0;39m (|2023-07-26 09:38:01.255 - log - [34mINFO [0;39m (|2023-07-26 09:38:01.297 - log - [34mINFO [0;39m (|2023-07-26 09:38:01.297 - prepareWebApplicationContext - [34mINFO [0;39m (|2023-07-26 09:38:01.372 - logPersistenceUnitInformation - [34mINFO [0;39m (|2023-07-26 09:38:01.392 - logVersion - [34mINFO [0;39m (|2023-07-26 09:38:01.393 - <clinit> - [34mINFO [0;39m (|2023-07-26 09:38:01.449 - buildBytecodeProvider - [34mINFO [0;39m (|2023-07-26 09:38:01.512 - addTransformer - [34mINFO [0;39m (|2023-07-26 09:38:01.521 - getConnection - [34mINFO [0;39m (|2023-07-26 09:38:01.687 - checkFailFast - [34mINFO [0;39m (|2023-07-26 09:38:01.688 - getConnection - [34mINFO [0;39m (|2023-07-26 09:38:01.708 - logSelectedDialect - [31mWARN [0;39m (|2023-07-26 09:38:01.802 - buildBytecodeProvider - [34mINFO [0;39m (|2023-07-26 09:38:02.092 - initiateService - [34mINFO [0;39m (|2023-07-26 09:38:02.136 - buildNativeEntityManagerFactory - [34mINFO [0;39m (|2023-07-26 09:38:02.318 - openEntityManagerInViewInterceptor - [31mWARN [0;39m (|2023-07-26 09:38:02.467 - log - [34mINFO [0;39m (|2023-07-26 09:38:02.474 - start - [34mINFO [0;39m (|2023-07-26 09:38:02.478 - logStarted - [34mINFO [0;39m (|2023-07-26 09:38:38.437 - log - [34mINFO [0;39m (|2023-07-26 09:38:38.437 - initServletBean - [34mINFO [0;39m (|2023-07-26 09:38:38.438 - initServletBean - [34mINFO [0;39m (|2023-07-26 09:38:38.517 - traerTodosConStock - [34mINFO [0;39m (|2023-07-26 09:38:53.870 - traerVentasDeAuto - [34mINFO [0;39m (|2023-07-26 09:39:21.848 - destroy - [34mINFO [0;39m (|2023-07-26 09:39:21.850 - close - [34mINFO [0;39m (|2023-07-26 09:39:21.854 - close - [34mINFO [0;39m (|2023-07-26 09:39:23.562 - logStarting - [34mINFO [0;39m (|2023-07-26 09:39:23.563 - logStartupProfileInfo - [34mINFO [0;39m (|2023-07-26 09:39:23.859 - registerRepositoriesIn - [34mINFO [0;39m (|2023-07-26 09:39:23.886 - registerRepositoriesIn - [34mINFO [0;39m (|2023-07-26 09:39:24.108 - initialize - [34mINFO [0;39m (|2023-07-26 09:39:24.112 - log - [34mINFO [0;39m (|2023-07-26 09:39:24.113 - log - [34mINFO [0;39m (|2023-07-26 09:39:24.114 - log - [34mINFO [0;39m (|2023-07-26 09:39:24.159 - log - [34mINFO [0;39m (|2023-07-26 09:39:24.159 - prepareWebApplicationContext - [34mINFO [0;39m (|2023-07-26 09:39:24.232 - logPersistenceUnitInformation - [34mINFO [0;39m (|2023-07-26 09:39:24.252 - logVersion - [34mINFO [0;39m (|2023-07-26 09:39:24.253 - <clinit> - [34mINFO [0;39m (|2023-07-26 09:39:24.317 - buildBytecodeProvider - [34mINFO [0;39m (|2023-07-26 09:39:24.401 - addTransformer - [34mINFO [0;39m (|2023-07-26 09:39:24.412 - getConnection - [34mINFO [0;39m (|2023-07-26 09:39:24.613 - checkFailFast - [34mINFO [0;39m (|2023-07-26 09:39:24.614 - getConnection - [34mINFO [0;39m (|2023-07-26 09:39:24.635 - logSelectedDialect - [31mWARN [0;39m (|2023-07-26 09:39:24.725 - buildBytecodeProvider - [34mINFO [0;39m (|2023-07-26 09:39:25.024 - initiateService - [34mINFO [0;39m (|2023-07-26 09:39:25.069 - buildNativeEntityManagerFactory - [34mINFO [0;39m (|2023-07-26 09:39:25.257 - openEntityManagerInViewInterceptor - [31mWARN [0;39m (|2023-07-26 09:39:25.408 - log - [34mINFO [0;39m (|2023-07-26 09:39:25.415 - start - [34mINFO [0;39m (|2023-07-26 09:39:25.420 - logStarted - [34mINFO [0;39m (|2023-07-26 09:39:32.303 - log - [34mINFO [0;39m (|2023-07-26 09:39:32.303 - initServletBean - [34mINFO [0;39m (|2023-07-26 09:39:32.304 - initServletBean - [34mINFO [0;39m (|2023-07-26 09:39:32.398 - traerVentasDeAuto - [34mINFO [0;39m (|2023-07-26 09:40:24.870 - destroy - [34mINFO [0;39m (|2023-07-26 09:40:24.872 - close - [34mINFO [0;39m (|2023-07-26 09:40:24.875 - close - [34mINFO [0;39m (|2023-07-26 09:40:26.642 - logStarting - [34mINFO [0;39m (|2023-07-26 09:40:26.643 - logStartupProfileInfo - [34mINFO [0;39m (|2023-07-26 09:40:26.923 - registerRepositoriesIn - [34mINFO [0;39m (|2023-07-26 09:40:26.950 - registerRepositoriesIn - [34mINFO [0;39m (|2023-07-26 09:40:27.190 - initialize - [34mINFO [0;39m (|2023-07-26 09:40:27.194 - log - [34mINFO [0;39m (|2023-07-26 09:40:27.195 - log - [34mINFO [0;39m (|2023-07-26 09:40:27.195 - log - [34mINFO [0;39m (|2023-07-26 09:40:27.231 - log - [34mINFO [0;39m (|2023-07-26 09:40:27.232 - prepareWebApplicationContext - [34mINFO [0;39m (|2023-07-26 09:40:27.302 - logPersistenceUnitInformation - [34mINFO [0;39m (|2023-07-26 09:40:27.321 - logVersion - [34mINFO [0;39m (|2023-07-26 09:40:27.322 - <clinit> - [34mINFO [0;39m (|2023-07-26 09:40:27.380 - buildBytecodeProvider - [34mINFO [0;39m (|2023-07-26 09:40:27.447 - addTransformer - [34mINFO [0;39m (|2023-07-26 09:40:27.455 - getConnection - [34mINFO [0;39m (|2023-07-26 09:40:27.626 - checkFailFast - [34mINFO [0;39m (|2023-07-26 09:40:27.627 - getConnection - [34mINFO [0;39m (|2023-07-26 09:40:27.649 - logSelectedDialect - [31mWARN [0;39m (|2023-07-26 09:40:27.738 - buildBytecodeProvider - [34mINFO [0;39m (|2023-07-26 09:40:28.034 - initiateService - [34mINFO [0;39m (|2023-07-26 09:40:28.077 - buildNativeEntityManagerFactory - [34mINFO [0;39m (|2023-07-26 09:40:28.264 - openEntityManagerInViewInterceptor - [31mWARN [0;39m (|2023-07-26 09:40:28.424 - log - [34mINFO [0;39m (|2023-07-26 09:40:28.431 - start - [34mINFO [0;39m (|2023-07-26 09:40:28.436 - logStarted - [34mINFO [0;39m (|2023-07-26 09:42:31.151 - log - [34mINFO [0;39m (|2023-07-26 09:42:31.151 - initServletBean - [34mINFO [0;39m (|2023-07-26 09:42:31.151 - initServletBean - [34mINFO [0;39m (|2023-07-26 09:42:31.235 - traerVentasDeAuto - [1;31mERROR[0;39m (|2023-07-26 09:50:05.474 - destroy - [34mINFO [0;39m (|2023-07-26 09:50:05.475 - close - [34mINFO [0;39m (|2023-07-26 09:50:05.478 - close - [34mINFO [0;39m (|2023-07-26 09:50:07.379 - logStarting - [34mINFO [0;39m (|2023-07-26 09:50:07.381 - logStartupProfileInfo - [34mINFO [0;39m (|2023-07-26 09:50:07.681 - registerRepositoriesIn - [34mINFO [0;39m (|2023-07-26 09:50:07.707 - registerRepositoriesIn - [34mINFO [0;39m (|2023-07-26 09:50:07.943 - initialize - [34mINFO [0;39m (|2023-07-26 09:50:07.947 - log - [34mINFO [0;39m (|2023-07-26 09:50:07.948 - log - [34mINFO [0;39m (|2023-07-26 09:50:07.949 - log - [34mINFO [0;39m (|2023-07-26 09:50:07.989 - log - [34mINFO [0;39m (|2023-07-26 09:50:07.989 - prepareWebApplicationContext - [34mINFO [0;39m (|2023-07-26 09:50:08.067 - logPersistenceUnitInformation - [34mINFO [0;39m (|2023-07-26 09:50:08.085 - logVersion - [34mINFO [0;39m (|2023-07-26 09:50:08.086 - <clinit> - [34mINFO [0;39m (|2023-07-26 09:50:08.137 - buildBytecodeProvider - [34mINFO [0;39m (|2023-07-26 09:50:08.202 - addTransformer - [34mINFO [0;39m (|2023-07-26 09:50:08.209 - getConnection - [34mINFO [0;39m (|2023-07-26 09:50:08.370 - checkFailFast - [34mINFO [0;39m (|2023-07-26 09:50:08.371 - getConnection - [34mINFO [0;39m (|2023-07-26 09:50:08.393 - logSelectedDialect - [31mWARN [0;39m (|2023-07-26 09:50:08.490 - buildBytecodeProvider - [34mINFO [0;39m (|2023-07-26 09:50:08.774 - initiateService - [34mINFO [0;39m (|2023-07-26 09:50:08.817 - buildNativeEntityManagerFactory - [34mINFO [0;39m (|2023-07-26 09:50:09.012 - openEntityManagerInViewInterceptor - [31mWARN [0;39m (|2023-07-26 09:50:09.171 - log - [34mINFO [0;39m (|2023-07-26 09:50:09.179 - start - [34mINFO [0;39m (|2023-07-26 09:50:09.184 - logStarted - [34mINFO [0;39m (|2023-07-26 09:50:15.646 - log - [34mINFO [0;39m (|2023-07-26 09:50:15.647 - initServletBean - [34mINFO [0;39m (|2023-07-26 09:50:15.647 - initServletBean - [34mINFO [0;39m (|2023-07-26 09:50:15.732 - traerVentasDeAuto - [1;31mERROR[0;39m (|2023-07-26 09:50:20.695 - traerVentasDeAuto - [34mINFO [0;39m (|2023-07-26 09:54:27.289 - traerVentasDeAuto - [34mINFO [0;39m (|2023-07-26 10:28:01.365 - destroy - [34mINFO [0;39m (|2023-07-26 10:28:01.366 - close - [34mINFO [0;39m (|2023-07-26 10:28:01.369 - close - [34mINFO [0;39m (|2023-07-26 10:28:03.370 - logStarting - [34mINFO [0;39m (|2023-07-26 10:28:03.372 - logStartupProfileInfo - [34mINFO [0;39m (|2023-07-26 10:28:03.668 - registerRepositoriesIn - [34mINFO [0;39m (|2023-07-26 10:28:03.694 - registerRepositoriesIn - [34mINFO [0;39m (|2023-07-26 10:28:03.917 - initialize - [34mINFO [0;39m (|2023-07-26 10:28:03.922 - log - [34mINFO [0;39m (|2023-07-26 10:28:03.923 - log - [34mINFO [0;39m (|2023-07-26 10:28:03.923 - log - [34mINFO [0;39m (|2023-07-26 10:28:03.965 - log - [34mINFO [0;39m (|2023-07-26 10:28:03.966 - prepareWebApplicationContext - [34mINFO [0;39m (|2023-07-26 10:28:04.044 - logPersistenceUnitInformation - [34mINFO [0;39m (|2023-07-26 10:28:04.062 - logVersion - [34mINFO [0;39m (|2023-07-26 10:28:04.063 - <clinit> - [34mINFO [0;39m (|2023-07-26 10:28:04.113 - buildBytecodeProvider - [34mINFO [0;39m (|2023-07-26 10:28:04.178 - addTransformer - [34mINFO [0;39m (|2023-07-26 10:28:04.186 - getConnection - [34mINFO [0;39m (|2023-07-26 10:28:04.352 - checkFailFast - [34mINFO [0;39m (|2023-07-26 10:28:04.353 - getConnection - [34mINFO [0;39m (|2023-07-26 10:28:04.375 - logSelectedDialect - [31mWARN [0;39m (|2023-07-26 10:28:04.470 - buildBytecodeProvider - [34mINFO [0;39m (|2023-07-26 10:28:04.763 - initiateService - [34mINFO [0;39m (|2023-07-26 10:28:04.807 - buildNativeEntityManagerFactory - [34mINFO [0;39m (|2023-07-26 10:28:05.001 - openEntityManagerInViewInterceptor - [31mWARN [0;39m (|2023-07-26 10:28:05.161 - log - [34mINFO [0;39m (|2023-07-26 10:28:05.168 - start - [34mINFO [0;39m (|2023-07-26 10:28:05.174 - logStarted - [34mINFO [0;39m (|2023-07-26 10:29:48.179 - log - [34mINFO [0;39m (|2023-07-26 10:29:48.179 - initServletBean - [34mINFO [0;39m (|2023-07-26 10:29:48.180 - initServletBean - [34mINFO [0;39m (|2023-07-26 10:30:13.614 - logException - [31mWARN [0;39m (|2023-07-26 10:30:38.810 - destroy - [34mINFO [0;39m (|2023-07-26 10:30:38.811 - close - [34mINFO [0;39m (|2023-07-26 10:30:38.815 - close - [34mINFO [0;39m (|2023-07-26 10:30:40.635 - logStarting - [34mINFO [0;39m (|2023-07-26 10:30:40.637 - logStartupProfileInfo - [34mINFO [0;39m (|2023-07-26 10:30:40.923 - registerRepositoriesIn - [34mINFO [0;39m (|2023-07-26 10:30:40.949 - registerRepositoriesIn - [34mINFO [0;39m (|2023-07-26 10:30:41.187 - initialize - [34mINFO [0;39m (|2023-07-26 10:30:41.193 - log - [34mINFO [0;39m (|2023-07-26 10:30:41.194 - log - [34mINFO [0;39m (|2023-07-26 10:30:41.194 - log - [34mINFO [0;39m (|2023-07-26 10:30:41.230 - log - [34mINFO [0;39m (|2023-07-26 10:30:41.230 - prepareWebApplicationContext - [34mINFO [0;39m (|2023-07-26 10:30:41.301 - logPersistenceUnitInformation - [34mINFO [0;39m (|2023-07-26 10:30:41.322 - logVersion - [34mINFO [0;39m (|2023-07-26 10:30:41.323 - <clinit> - [34mINFO [0;39m (|2023-07-26 10:30:41.378 - buildBytecodeProvider - [34mINFO [0;39m (|2023-07-26 10:30:41.442 - addTransformer - [34mINFO [0;39m (|2023-07-26 10:30:41.450 - getConnection - [34mINFO [0;39m (|2023-07-26 10:30:41.620 - checkFailFast - [34mINFO [0;39m (|2023-07-26 10:30:41.621 - getConnection - [34mINFO [0;39m (|2023-07-26 10:30:41.643 - logSelectedDialect - [31mWARN [0;39m (|2023-07-26 10:30:41.732 - buildBytecodeProvider - [34mINFO [0;39m (|2023-07-26 10:30:42.026 - initiateService - [34mINFO [0;39m (|2023-07-26 10:30:42.070 - buildNativeEntityManagerFactory - [34mINFO [0;39m (|2023-07-26 10:30:42.259 - openEntityManagerInViewInterceptor - [31mWARN [0;39m (|2023-07-26 10:30:42.420 - log - [34mINFO [0;39m (|2023-07-26 10:30:42.427 - start - [34mINFO [0;39m (|2023-07-26 10:30:42.432 - logStarted - [34mINFO [0;39m (|2023-07-26 10:30:46.873 - log - [34mINFO [0;39m (|2023-07-26 10:30:46.873 - initServletBean - [34mINFO [0;39m (|2023-07-26 10:30:46.874 - initServletBean - [34mINFO [0;39m (|2023-07-26 10:37:28.659 - destroy - [34mINFO [0;39m (|2023-07-26 10:37:28.660 - close - [34mINFO [0;39m (|2023-07-26 10:37:28.664 - close - [34mINFO [0;39m (|2023-07-26 10:37:30.484 - logStarting - [34mINFO [0;39m (|2023-07-26 10:37:30.486 - logStartupProfileInfo - [34mINFO [0;39m (|2023-07-26 10:37:30.776 - registerRepositoriesIn - [34mINFO [0;39m (|2023-07-26 10:37:30.802 - registerRepositoriesIn - [34mINFO [0;39m (|2023-07-26 10:37:31.036 - initialize - [34mINFO [0;39m (|2023-07-26 10:37:31.040 - log - [34mINFO [0;39m (|2023-07-26 10:37:31.041 - log - [34mINFO [0;39m (|2023-07-26 10:37:31.041 - log - [34mINFO [0;39m (|2023-07-26 10:37:31.084 - log - [34mINFO [0;39m (|2023-07-26 10:37:31.085 - prepareWebApplicationContext - [34mINFO [0;39m (|2023-07-26 10:37:31.155 - logPersistenceUnitInformation - [34mINFO [0;39m (|2023-07-26 10:37:31.178 - logVersion - [34mINFO [0;39m (|2023-07-26 10:37:31.179 - <clinit> - [34mINFO [0;39m (|2023-07-26 10:37:31.235 - buildBytecodeProvider - [34mINFO [0;39m (|2023-07-26 10:37:31.302 - addTransformer - [34mINFO [0;39m (|2023-07-26 10:37:31.310 - getConnection - [34mINFO [0;39m (|2023-07-26 10:37:31.478 - checkFailFast - [34mINFO [0;39m (|2023-07-26 10:37:31.479 - getConnection - [34mINFO [0;39m (|2023-07-26 10:37:31.499 - logSelectedDialect - [31mWARN [0;39m (|2023-07-26 10:37:31.593 - buildBytecodeProvider - [34mINFO [0;39m (|2023-07-26 10:37:31.884 - initiateService - [34mINFO [0;39m (|2023-07-26 10:37:31.927 - buildNativeEntityManagerFactory - [34mINFO [0;39m (|2023-07-26 10:37:32.113 - openEntityManagerInViewInterceptor - [31mWARN [0;39m (|2023-07-26 10:37:32.269 - log - [34mINFO [0;39m (|2023-07-26 10:37:32.276 - start - [34mINFO [0;39m (|2023-07-26 10:37:32.281 - logStarted - [34mINFO [0;39m (|2023-07-26 11:05:28.797 - destroy - [34mINFO [0;39m (|2023-07-26 11:05:28.798 - close - [34mINFO [0;39m (|2023-07-26 11:05:28.802 - close - [34mINFO [0;39m (|2023-07-26 11:05:30.737 - logStarting - [34mINFO [0;39m (|2023-07-26 11:05:30.739 - logStartupProfileInfo - [34mINFO [0;39m (|2023-07-26 11:05:31.026 - registerRepositoriesIn - [34mINFO [0;39m (|2023-07-26 11:05:31.052 - registerRepositoriesIn - [34mINFO [0;39m (|2023-07-26 11:05:31.271 - initialize - [34mINFO [0;39m (|2023-07-26 11:05:31.275 - log - [34mINFO [0;39m (|2023-07-26 11:05:31.276 - log - [34mINFO [0;39m (|2023-07-26 11:05:31.276 - log - [34mINFO [0;39m (|2023-07-26 11:05:31.321 - log - [34mINFO [0;39m (|2023-07-26 11:05:31.322 - prepareWebApplicationContext - [34mINFO [0;39m (|2023-07-26 11:05:31.396 - logPersistenceUnitInformation - [34mINFO [0;39m (|2023-07-26 11:05:31.413 - logVersion - [34mINFO [0;39m (|2023-07-26 11:05:31.414 - <clinit> - [34mINFO [0;39m (|2023-07-26 11:05:31.467 - buildBytecodeProvider - [34mINFO [0;39m (|2023-07-26 11:05:31.529 - addTransformer - [34mINFO [0;39m (|2023-07-26 11:05:31.537 - getConnection - [34mINFO [0;39m (|2023-07-26 11:05:31.701 - checkFailFast - [34mINFO [0;39m (|2023-07-26 11:05:31.702 - getConnection - [34mINFO [0;39m (|2023-07-26 11:05:31.723 - logSelectedDialect - [31mWARN [0;39m (|2023-07-26 11:05:31.814 - buildBytecodeProvider - [34mINFO [0;39m (|2023-07-26 11:05:32.098 - initiateService - [34mINFO [0;39m (|2023-07-26 11:05:32.142 - buildNativeEntityManagerFactory - [34mINFO [0;39m (|2023-07-26 11:05:32.326 - openEntityManagerInViewInterceptor - [31mWARN [0;39m (|2023-07-26 11:05:32.480 - log - [34mINFO [0;39m (|2023-07-26 11:05:32.490 - start - [34mINFO [0;39m (|2023-07-26 11:05:32.495 - logStarted - [34mINFO [0;39m (|2023-07-26 11:10:24.213 - destroy - [34mINFO [0;39m (|2023-07-26 11:10:24.215 - close - [34mINFO [0;39m (|2023-07-26 11:10:24.219 - close - [34mINFO [0;39m (|2023-07-26 11:10:26.290 - logStarting - [34mINFO [0;39m (|2023-07-26 11:10:26.291 - logStartupProfileInfo - [34mINFO [0;39m (|2023-07-26 11:10:26.585 - registerRepositoriesIn - [34mINFO [0;39m (|2023-07-26 11:10:26.612 - registerRepositoriesIn - [34mINFO [0;39m (|2023-07-26 11:10:26.843 - initialize - [34mINFO [0;39m (|2023-07-26 11:10:26.847 - log - [34mINFO [0;39m (|2023-07-26 11:10:26.848 - log - [34mINFO [0;39m (|2023-07-26 11:10:26.849 - log - [34mINFO [0;39m (|2023-07-26 11:10:26.884 - log - [34mINFO [0;39m (|2023-07-26 11:10:26.885 - prepareWebApplicationContext - [34mINFO [0;39m (|2023-07-26 11:10:26.954 - logPersistenceUnitInformation - [34mINFO [0;39m (|2023-07-26 11:10:26.973 - logVersion - [34mINFO [0;39m (|2023-07-26 11:10:26.974 - <clinit> - [34mINFO [0;39m (|2023-07-26 11:10:27.028 - buildBytecodeProvider - [34mINFO [0;39m (|2023-07-26 11:10:27.090 - addTransformer - [34mINFO [0;39m (|2023-07-26 11:10:27.097 - getConnection - [34mINFO [0;39m (|2023-07-26 11:10:27.266 - checkFailFast - [34mINFO [0;39m (|2023-07-26 11:10:27.267 - getConnection - [34mINFO [0;39m (|2023-07-26 11:10:27.288 - logSelectedDialect - [31mWARN [0;39m (|2023-07-26 11:10:27.378 - buildBytecodeProvider - [34mINFO [0;39m (|2023-07-26 11:10:27.661 - initiateService - [34mINFO [0;39m (|2023-07-26 11:10:27.697 - handleException - [31mWARN [0;39m (|org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table auto modify column precio  float(53) not null" via JDBC [Data truncated for column 'precio' at row 9]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:92)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:574)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:514)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.migrateTable(AbstractSchemaMigrator.java:333)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:84)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:232)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:117)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:284)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:143)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:140)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:292)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1455)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1817)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1155)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.opendev.Peugeot.PeugeotApplication.main(PeugeotApplication.java:10)
+Caused by: java.sql.SQLException: Data truncated for column 'precio' at row 9
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:78)
+	... 38 common frames omitted
+2023-07-26 11:10:27.718 - buildNativeEntityManagerFactory - [34mINFO [0;39m (|2023-07-26 11:10:27.904 - openEntityManagerInViewInterceptor - [31mWARN [0;39m (|2023-07-26 11:10:28.081 - log - [34mINFO [0;39m (|2023-07-26 11:10:28.088 - start - [34mINFO [0;39m (|2023-07-26 11:10:28.094 - logStarted - [34mINFO [0;39m (|2023-07-26 11:11:01.438 - log - [34mINFO [0;39m (|2023-07-26 11:11:01.438 - initServletBean - [34mINFO [0;39m (|2023-07-26 11:11:01.439 - initServletBean - [34mINFO [0;39m (|2023-07-26 11:11:01.519 - log - [1;31mERROR[0;39m (|java.lang.IllegalArgumentException: Can not set double field com.opendev.Peugeot.model.Auto.precio to null value
+	at java.base/jdk.internal.reflect.FieldAccessorImpl.throwSetIllegalArgumentException(FieldAccessorImpl.java:228)
+	at java.base/jdk.internal.reflect.FieldAccessorImpl.throwSetIllegalArgumentException(FieldAccessorImpl.java:232)
+	at java.base/jdk.internal.reflect.MethodHandleDoubleFieldAccessorImpl.set(MethodHandleDoubleFieldAccessorImpl.java:111)
+	at java.base/java.lang.reflect.Field.set(Field.java:834)
+	at org.hibernate.property.access.spi.SetterFieldImpl.set(SetterFieldImpl.java:55)
+	at org.hibernate.persister.entity.AbstractEntityPersister.setPropertyValues(AbstractEntityPersister.java:4187)
+	at org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.initializeEntityInstance(AbstractEntityInitializer.java:844)
+	at org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.initializeEntity(AbstractEntityInitializer.java:804)
+	at org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.initializeInstance(AbstractEntityInitializer.java:790)
+	at org.hibernate.sql.results.internal.InitializersList.initializeInstance(InitializersList.java:70)
+	at org.hibernate.sql.results.internal.StandardRowReader.coordinateInitializers(StandardRowReader.java:111)
+	at org.hibernate.sql.results.internal.StandardRowReader.readRow(StandardRowReader.java:87)
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:199)
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:33)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:361)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:168)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.list(JdbcSelectExecutorStandardImpl.java:93)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:31)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.lambda$new$0(ConcreteSqmSelectQueryPlan.java:110)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.withCacheableSqmInterpretation(ConcreteSqmSelectQueryPlan.java:303)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.performList(ConcreteSqmSelectQueryPlan.java:244)
+	at org.hibernate.query.sqm.internal.QuerySqmImpl.doList(QuerySqmImpl.java:518)
+	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:367)
+	at org.hibernate.query.Query.getResultList(Query.java:119)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:382)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:95)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:288)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:136)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:120)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:391)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:164)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:244)
+	at jdk.proxy2/jdk.proxy2.$Proxy110.findAll(Unknown Source)
+	at com.opendev.Peugeot.service.AutoService.traerTodosConStock(AutoService.java:49)
+	at com.opendev.Peugeot.controller.PeugeotController.traerTodosConStock(PeugeotController.java:39)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2023-07-26 11:11:40.748 - destroy - [34mINFO [0;39m (|2023-07-26 11:11:40.750 - close - [34mINFO [0;39m (|2023-07-26 11:11:40.754 - close - [34mINFO [0;39m (|2023-07-26 11:11:42.825 - logStarting - [34mINFO [0;39m (|2023-07-26 11:11:42.827 - logStartupProfileInfo - [34mINFO [0;39m (|2023-07-26 11:11:43.129 - registerRepositoriesIn - [34mINFO [0;39m (|2023-07-26 11:11:43.156 - registerRepositoriesIn - [34mINFO [0;39m (|2023-07-26 11:11:43.388 - initialize - [34mINFO [0;39m (|2023-07-26 11:11:43.392 - log - [34mINFO [0;39m (|2023-07-26 11:11:43.393 - log - [34mINFO [0;39m (|2023-07-26 11:11:43.393 - log - [34mINFO [0;39m (|2023-07-26 11:11:43.428 - log - [34mINFO [0;39m (|2023-07-26 11:11:43.428 - prepareWebApplicationContext - [34mINFO [0;39m (|2023-07-26 11:11:43.499 - logPersistenceUnitInformation - [34mINFO [0;39m (|2023-07-26 11:11:43.517 - logVersion - [34mINFO [0;39m (|2023-07-26 11:11:43.518 - <clinit> - [34mINFO [0;39m (|2023-07-26 11:11:43.572 - buildBytecodeProvider - [34mINFO [0;39m (|2023-07-26 11:11:43.636 - addTransformer - [34mINFO [0;39m (|2023-07-26 11:11:43.644 - getConnection - [34mINFO [0;39m (|2023-07-26 11:11:43.815 - checkFailFast - [34mINFO [0;39m (|2023-07-26 11:11:43.816 - getConnection - [34mINFO [0;39m (|2023-07-26 11:11:43.836 - logSelectedDialect - [31mWARN [0;39m (|2023-07-26 11:11:43.926 - buildBytecodeProvider - [34mINFO [0;39m (|2023-07-26 11:11:44.213 - initiateService - [34mINFO [0;39m (|2023-07-26 11:11:44.257 - buildNativeEntityManagerFactory - [34mINFO [0;39m (|2023-07-26 11:11:44.443 - openEntityManagerInViewInterceptor - [31mWARN [0;39m (|2023-07-26 11:11:44.600 - log - [34mINFO [0;39m (|2023-07-26 11:11:44.607 - start - [34mINFO [0;39m (|2023-07-26 11:11:44.612 - logStarted - [34mINFO [0;39m (|2023-07-26 11:11:48.967 - log - [34mINFO [0;39m (|2023-07-26 11:11:48.967 - initServletBean - [34mINFO [0;39m (|2023-07-26 11:11:48.968 - initServletBean - [34mINFO [0;39m (|2023-07-26 11:11:49.047 - traerTodosConStock - [34mINFO [0;39m (|2023-07-26 11:12:34.588 - logException - [31mWARN [0;39m (|2023-07-26 11:12:52.593 - traerTodosConStock - [34mINFO [0;39m (|2023-07-26 11:13:19.797 - modificarStock - [34mINFO [0;39m (|2023-07-26 11:13:29.551 - traerTodosConStock - [34mINFO [0;39m (|2023-07-26 11:13:41.509 - modificarPrecio - [34mINFO [0;39m (|2023-07-26 11:14:05.620 - traerTodosConStock - [34mINFO [0;39m (|2023-07-26 11:15:14.307 - modificarStock - [1;31mERROR[0;39m (|2023-07-26 11:15:27.893 - modificarStock - [1;31mERROR[0;39m (|2023-07-26 11:16:02.626 - modificarPrecio - [1;31mERROR[0;39m (|

@@ -84,6 +84,10 @@ public class Auto {
         return unidadesEnStock;
     }
 
+    public void setUnidadesEnStock(int cantidad){
+        if(cantidad > 0) this.unidadesEnStock = cantidad;
+    }
+
     public void setPrecio(Long precio){
         if(precio > 0){
             this.precio = precio;
