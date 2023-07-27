@@ -10,7 +10,7 @@ import com.opendev.Peugeot.repository.IAutoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
-import org.springframework.validation.annotation.Validated;
+
 
 import java.util.Comparator;
 import java.util.List;
@@ -18,7 +18,6 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
-@Validated
 public class AutoService {
     private final IAutoRepository repositorio;
     @Autowired
@@ -37,7 +36,7 @@ public class AutoService {
         return mensaje;
     }
 
-    public String traerTodosConStock(String orden, String tipo) {
+    public List<Auto> traerTodosConStock(String orden, String tipo) {
         List<Auto> listaAutos = null;
         if(tipo.equalsIgnoreCase("ORM")){
             if (orden.equalsIgnoreCase("ASC")) {
@@ -53,7 +52,7 @@ public class AutoService {
                 listaAutos = listaDesordenada.stream().sorted((x, y) -> (y.getId().compareTo(x.getId()))).collect(Collectors.toList());
             }
         }
-        return stringFormatter(filtrarConStock(listaAutos));
+        return filtrarConStock(listaAutos);
     }
 
     public List<Auto> traerTodos() {
@@ -112,7 +111,7 @@ public class AutoService {
         return mensaje;
     }
 
-    public String modificarPrecio(Long id, Long monto) throws AutoInexistenteException, MontoInvalidoException {
+    public String modificarPrecio(Long id, double monto) throws AutoInexistenteException, MontoInvalidoException {
         String mensaje = "Precio modificado con exito";
         Optional<Auto> autoAModificar = repositorio.findById(id);
         if(autoAModificar.isEmpty()){

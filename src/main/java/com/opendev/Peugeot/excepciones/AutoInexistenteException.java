@@ -6,7 +6,8 @@ public class AutoInexistenteException extends Exception{
         this.mensaje = "No existe el auto con id " + id + ".";
     }
 
-    public String mensaje(){
+    @Override
+    public String getMessage(){
         return mensaje;
     }
 }

@@ -6,7 +6,8 @@ public class MontoInvalidoException extends Exception {
         this.mensaje = "El monto ingresado no es valido.";
     }
 
-    public String mensaje(){
+    @Override
+    public String getMessage(){
         return mensaje;
     }
 }

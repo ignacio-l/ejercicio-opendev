@@ -30,6 +30,5 @@ public class AutoValidator implements Validator {
         ValidationUtils.rejectIfEmptyOrWhitespace(errors, "hp","No puede estar nulo o vacio");
         ValidationUtils.rejectIfEmptyOrWhitespace(errors, "precio","No puede estar nulo o vacio");
         ValidationUtils.rejectIfEmptyOrWhitespace(errors, "unidadesEnStock","No puede estar nulo o vacio");
-
     }
 }

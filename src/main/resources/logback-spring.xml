@@ -2,10 +2,6 @@
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <pattern>%d{"yyyy-MM-dd HH:mm:ss.SSS"} - %method - %highlight(%level) %magenta(|) %msg%n</pattern>
-            <highlight>
-                <color value="GREEN"  key="INFO" />
-                <color value="RED"  key="ERROR" />
-            </highlight>
         </encoder>
     </appender>
 

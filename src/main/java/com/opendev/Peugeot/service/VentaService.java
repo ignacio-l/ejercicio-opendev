@@ -1,6 +1,5 @@
 package com.opendev.Peugeot.service;
 
-import com.opendev.Peugeot.excepciones.AutoExistenteException;
 import com.opendev.Peugeot.excepciones.AutoInexistenteException;
 import com.opendev.Peugeot.model.Auto;
 import com.opendev.Peugeot.model.Venta;
@@ -15,9 +14,7 @@ import java.util.stream.Collectors;
 
 @Service
 public class VentaService {
-
     private final IVentaRepository repositorio;
-
     @Autowired
     public VentaService(IVentaRepository repositorio) {
         this.repositorio = repositorio;
@@ -42,13 +39,12 @@ public class VentaService {
         return mensaje;
     }
 
-    public String traerVentas() {
+    public List<Venta> traerVentas() {
         List<Venta> listaVentas = repositorio.findAll();
-        String ventas = listaVentas.stream().map(x -> x.toString() + "\n").reduce("", String::concat);
-        return ventas;
+        return listaVentas;
     }
 
-    public String traerVentasDeAuto(Long id) throws AutoInexistenteException{
+    public List<Venta> traerVentasDeAuto(Long id) throws AutoInexistenteException{
         List<Venta> ventas = repositorio.findAll();
         List<Venta> ventasFiltradasPorAuto = ventas.stream()
                                                     .filter(x->x.getIdAuto()==id)
@@ -56,21 +52,7 @@ public class VentaService {
         if(ventasFiltradasPorAuto.isEmpty()){
             throw new AutoInexistenteException(id);
         }
-        double montoTotal = ventasFiltradasPorAuto.stream().mapToDouble(Venta::getMonto).sum();
-        return convertirListaAString(ventasFiltradasPorAuto) + "\n El monto total de venta es $" + montoTotal + ".";
-    }
-
-    public String traerVentasAnuales() {
-        LocalDateTime fecha = LocalDateTime.now().minusYears(1);
-        List<Venta> listaVentas = this.traerListaVentasAnuales();
-        return convertirListaAString(listaVentas);
-    }
-
-    public String convertirListaAString(List<Venta> lista){
-        String ventasConvertidas = lista.stream()
-                .map(e -> e.toString() + "\n")
-                .reduce("", String::concat);
-        return ventasConvertidas;
+        return ventasFiltradasPorAuto;
     }
 
     public List<Venta> traerListaVentasAnuales() {

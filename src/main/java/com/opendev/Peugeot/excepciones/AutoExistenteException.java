@@ -6,7 +6,8 @@ public class AutoExistenteException extends Exception {
         this.mensaje = "El vehiculo ya existe en la base de datos.";
     }
 
-    public String mensaje(){
+    @Override
+    public String getMessage(){
         return mensaje;
     }
 }

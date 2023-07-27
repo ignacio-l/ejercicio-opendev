@@ -5,6 +5,7 @@ import com.opendev.Peugeot.excepciones.AutoInexistenteException;
 import com.opendev.Peugeot.excepciones.CantidadInvalidaException;
 import com.opendev.Peugeot.excepciones.MontoInvalidoException;
 import com.opendev.Peugeot.model.Auto;
+import com.opendev.Peugeot.model.Venta;
 import com.opendev.Peugeot.service.AutoService;
 import com.opendev.Peugeot.service.VentaService;
 import com.opendev.Peugeot.validation.AutoValidator;
@@ -17,6 +18,9 @@ import org.springframework.web.bind.annotation.*;
 
 
 import java.util.List;
+import java.util.Map;
+
+import com.opendev.Peugeot.utils.Utils;
 
 
 @CrossOrigin
@@ -28,149 +32,165 @@ public class PeugeotController {
     private final VentaService ventaService;
     private AutoValidator autoValidator;
 
-    public PeugeotController(AutoService autoService, VentaService ventaService,AutoValidator autoValidator){
+    public PeugeotController(AutoService autoService, VentaService ventaService, AutoValidator autoValidator) {
         this.autoService = autoService;
         this.ventaService = ventaService;
         this.autoValidator = autoValidator;
     }
 
     @GetMapping("/autos/get/{orden}/{tipo}")
-    public ResponseEntity<String> traerTodosConStock(@PathVariable("orden") String orden, @PathVariable("tipo") String tipo){
-        String autos = autoService.traerTodosConStock(orden,tipo);
+    public ResponseEntity<Map<String, Object>> traerTodosConStock(@PathVariable("orden") String orden, @PathVariable("tipo") String tipo) {
+        List<Auto> autos = autoService.traerTodosConStock(orden, tipo);
         logger.info(" orden: " + orden + " y utilizando: " + tipo);
-        return new ResponseEntity<>(autos, HttpStatus.OK);
+        return new ResponseEntity<>(Utils.ok(autos), HttpStatus.OK);
     }
 
     @GetMapping("/autos/get")
-    public ResponseEntity<List<Auto>> traerTodos(){
+    public ResponseEntity<Map<String, Object>> traerTodos() {
         List<Auto> autos = autoService.traerTodos();
         logger.info(" Lista Desordenada");
-        return new ResponseEntity<>(autos,HttpStatus.OK);
+        return new ResponseEntity<>(Utils.ok(autos), HttpStatus.OK);
+    }
+    @GetMapping("/autos/get/{id}")
+    public ResponseEntity<Map<String, Object>> traerAutoPorId(@PathVariable Long id) {
+        try {
+            Auto auto = autoService.traerPorId(id);
+            logger.info("trajo auto con id " + id);
+            return new ResponseEntity<>(Utils.ok(auto), HttpStatus.OK);
+        } catch (AutoInexistenteException e) {
+            logger.error(e.getMessage());
+            return new ResponseEntity<>(Utils.error(e), HttpStatus.BAD_REQUEST);
+        }
+
     }
 
     @PostMapping("/autos/add")
-    public ResponseEntity<String> agregarAuto(@RequestBody Auto auto, BindingResult resultado){
+    public ResponseEntity<Map<String, Object>> agregarAuto(@RequestBody Auto auto, BindingResult resultado) {
         autoValidator.validate(auto, resultado);
-        if(resultado.hasErrors()) {
-            logger.error(" Error: el atributo " + resultado.getFieldError().getField() + " no puede estar vacio o ser nulo.");
-            return new ResponseEntity<>("Error: el atributo " + resultado.getFieldError().getField() + " no puede estar vacio o ser nulo.",HttpStatus.BAD_REQUEST);
+        if (resultado.hasErrors()) {
+            String mensaje = " Atributos incompletos o nulos. ";
+            logger.error(mensaje);
+            return new ResponseEntity<>(Utils.missing(resultado), HttpStatus.BAD_REQUEST);
         } else {
             try {
                 String mensaje = autoService.agregarAuto(auto);
                 logger.info(auto.toString());
-                return new ResponseEntity<>(mensaje, HttpStatus.OK);
+                return new ResponseEntity<>(Utils.ok(mensaje), HttpStatus.OK);
             } catch (AutoExistenteException e) {
-                logger.error(e.mensaje());
-                return new ResponseEntity<>(e.mensaje(), HttpStatus.BAD_REQUEST);
+                logger.error(e.getMessage());
+                return new ResponseEntity<>(Utils.error(e), HttpStatus.BAD_REQUEST);
             }
         }
     }
 
     @PostMapping("/autos/listaNoRep")
-    public ResponseEntity<List<Auto>> listaSinRepeticiones(@RequestBody List<Auto>listaRep){
+    public ResponseEntity<Map<String, Object>> listaSinRepeticiones(@RequestBody List<Auto> listaRep) {
         logger.info("Lista con Objetos Repetidos");
         List<Auto> listaSinRep = autoService.listaNoRep(listaRep);
-        return new ResponseEntity<>(listaSinRep,HttpStatus.OK);
+        return new ResponseEntity<>(Utils.ok(listaSinRep), HttpStatus.OK);
     }
 
     @PutMapping("/autos/modificar")
-    public ResponseEntity<String> modificarAuto(@RequestBody Auto auto){
+    public ResponseEntity<Map<String, Object>> modificarAuto(@RequestBody Auto auto) {
         try {
             String mensaje = autoService.modificarAuto(auto);
             logger.info(mensaje);
-            return new ResponseEntity<>(mensaje, HttpStatus.OK);
+            return new ResponseEntity<>(Utils.ok(mensaje), HttpStatus.OK);
         } catch (AutoInexistenteException e) {
-            logger.error(e.mensaje());
-            return new ResponseEntity<>(e.mensaje(),HttpStatus.BAD_REQUEST);
+            logger.error(e.getMessage());
+            return new ResponseEntity<>(Utils.error(e), HttpStatus.BAD_REQUEST);
         }
     }
 
     @PutMapping("/autos/modificarStock/{id}/{cantidad}")
-    public ResponseEntity<String> modificarStock(@PathVariable("id") Long id, @PathVariable("cantidad") int cantidad){
+    public ResponseEntity<Map<String, Object>> modificarStock(@PathVariable("id") Long id, @PathVariable("cantidad") int cantidad) {
         try {
             String mensaje = autoService.modificarStock(id, cantidad);
             logger.info(mensaje);
-            return new ResponseEntity<>(mensaje, HttpStatus.OK);
+            return new ResponseEntity<>(Utils.ok(mensaje), HttpStatus.OK);
         } catch (AutoInexistenteException e) {
-            logger.error(e.mensaje());
-            return new ResponseEntity<>(e.mensaje(),HttpStatus.BAD_REQUEST);
+            logger.error(e.getMessage());
+            return new ResponseEntity<>(Utils.error(e), HttpStatus.BAD_REQUEST);
         } catch (CantidadInvalidaException e) {
-            logger.error(e.mensaje());
-            return new ResponseEntity<>(e.mensaje(),HttpStatus.BAD_REQUEST);
+            logger.error(e.getMessage());
+            return new ResponseEntity<>(Utils.error(e), HttpStatus.BAD_REQUEST);
+        } catch (Exception e) {
+            logger.error(e.getMessage());
+            return new ResponseEntity(Utils.error(e), HttpStatus.BAD_REQUEST);
         }
     }
 
     @PutMapping("/autos/modificarPrecio/{id}/{monto}")
-    public ResponseEntity<String> modificarPrecio(@PathVariable("id") Long id, @PathVariable("monto") Long monto){
+    public ResponseEntity<Map<String, Object>> modificarPrecio(@PathVariable("id") Long id, @PathVariable("monto") Long monto) {
         try {
             String mensaje = autoService.modificarPrecio(id, monto);
             logger.info(mensaje);
-            return new ResponseEntity<>(mensaje, HttpStatus.OK);
+            return new ResponseEntity<>(Utils.ok(mensaje), HttpStatus.OK);
         } catch (AutoInexistenteException e) {
-            logger.error(e.mensaje());
-            return new ResponseEntity<>(e.mensaje(),HttpStatus.BAD_REQUEST);
+            logger.error(e.getLocalizedMessage());
+            return new ResponseEntity<>(Utils.error(e), HttpStatus.BAD_REQUEST);
         } catch (MontoInvalidoException e) {
-            logger.error(e.mensaje());
-            return new ResponseEntity<>(e.mensaje(),HttpStatus.BAD_REQUEST);
+            logger.error(e.getMessage());
+            return new ResponseEntity<>(Utils.error(e), HttpStatus.BAD_REQUEST);
         }
     }
 
     @DeleteMapping("autos/borrar/{id}")
-    public ResponseEntity<String> borrarAutoPorId(@PathVariable Long id){
-        try{
+    public ResponseEntity<Map<String, Object>> borrarAutoPorId(@PathVariable Long id) {
+        try {
             String mensaje = autoService.borrarAuto(id);
             logger.info(mensaje);
-            return new ResponseEntity<>(mensaje,HttpStatus.OK);
-        } catch (AutoInexistenteException e){
-            logger.error(e.mensaje());
-            return new ResponseEntity<>(e.mensaje(), HttpStatus.BAD_REQUEST );
+            return new ResponseEntity<>(Utils.ok(mensaje), HttpStatus.OK);
+        } catch (AutoInexistenteException e) {
+            logger.error(e.getMessage());
+            return new ResponseEntity<>(Utils.error(e), HttpStatus.BAD_REQUEST);
         }
     }
 
     @PostMapping("/venta/{idAuto}/{unidades}")
-    public ResponseEntity<String> hacerVenta(@PathVariable("idAuto") Long id, @PathVariable("unidades") int unidades){
+    public ResponseEntity<Map<String, Object>> hacerVenta(@PathVariable("idAuto") Long id, @PathVariable("unidades") int unidades) {
         Auto autoBuscado = null;
         try {
             autoBuscado = autoService.traerPorId(id);
-            String mensaje = ventaService.hacerVenta(autoBuscado,unidades);
+            String mensaje = ventaService.hacerVenta(autoBuscado, unidades);
             logger.info(" IdAuto: " + autoBuscado.getId() + " " + unidades);
-            return new ResponseEntity<>(mensaje, HttpStatus.OK);
+            return new ResponseEntity<>(Utils.ok(mensaje), HttpStatus.OK);
         } catch (AutoInexistenteException e) {
-            logger.error(" " + e.mensaje());
-            return new ResponseEntity<>(e.mensaje(),HttpStatus.BAD_REQUEST);
+            logger.error(" " + e.getMessage());
+            return new ResponseEntity<>(Utils.error(e), HttpStatus.BAD_REQUEST);
         }
     }
 
     @GetMapping("ventas/get")
-    public ResponseEntity<String> traerVentas(){
-        String ventas = ventaService.traerVentas();
+    public ResponseEntity<Map<String, Object>> traerVentas() {
+        List<Venta> ventas = ventaService.traerVentas();
         logger.info("");
-        return new ResponseEntity<>(ventas,HttpStatus.OK);
+        return new ResponseEntity<>(Utils.ok(ventas), HttpStatus.OK);
     }
 
     @GetMapping("ventas/{idAuto}")
-    public ResponseEntity<String> traerVentasDeAuto(@PathVariable("idAuto") Long id){
+    public ResponseEntity<Map<String, Object>> traerVentasDeAuto(@PathVariable("idAuto") Long id) {
         try {
-            String ventas = ventaService.traerVentasDeAuto(id);
+            List<Venta> ventasPorId = ventaService.traerVentasDeAuto(id);
             logger.info("Impresion ventas");
-            return new ResponseEntity<>(ventas, HttpStatus.OK);
-        }catch (AutoInexistenteException e){
-            logger.error(e.mensaje());
-            return new ResponseEntity<>(e.mensaje(), HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(Utils.ok(ventasPorId), HttpStatus.OK);
+        } catch (AutoInexistenteException e) {
+            logger.error(e.getMessage());
+            return new ResponseEntity<>(Utils.error(e), HttpStatus.BAD_REQUEST);
         }
     }
 
     @GetMapping("ventas/anuales")
-    public ResponseEntity<String> traerVentasAnuales(){
-        String ventasAnuales = ventaService.traerVentasAnuales();
+    public ResponseEntity<Map<String, Object>> traerVentasAnuales() {
+        List<Venta> ventasAnuales = ventaService.traerListaVentasAnuales();
         logger.info("");
-        return new ResponseEntity<>(ventasAnuales,HttpStatus.OK);
+        return new ResponseEntity<>(Utils.ok(ventasAnuales), HttpStatus.OK);
     }
 
     @GetMapping("ventas/reporte")
-    public ResponseEntity<String> imprimirReporteVentasAnuales(){
+    public ResponseEntity<String> imprimirReporteVentasAnuales() {
         String reporte = ventaService.reporteDeVentasAnual();
         logger.info("");
-        return new ResponseEntity<>(reporte,HttpStatus.OK);
+        return new ResponseEntity<>(reporte, HttpStatus.OK);
     }
 }
