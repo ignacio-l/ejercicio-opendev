@@ -12,11 +12,7 @@ COPY . /app
 RUN mvn -Dmaven.test.skip=true -DskipTests=true clean package
 
 # Crear una nueva imagen basada en OpenJDK 11
-<<<<<<< HEAD
-FROM eclipse-temurin:17-jdk-jammy
-=======
 FROM eclipse-temurin:17-jdk
->>>>>>> 6ad692eacdebf77606ba0db1725cd1425bb27a97
 
 # Exponer el puerto que utilizará la aplicación
 EXPOSE 8080
