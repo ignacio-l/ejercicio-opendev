@@ -1,6 +1,6 @@
 
 # Usar una imagen base con JDK 11 y Maven
-FROM maven:3.6.3-openjdk-17-alpine AS build
+FROM maven:3.6.3-openjdk-17-oracle AS build
 
 # Establecer un directorio de trabajo
 WORKDIR /app
