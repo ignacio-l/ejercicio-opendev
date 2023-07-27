@@ -12,7 +12,7 @@ COPY . /app
 RUN mvn -Dmaven.test.skip=true -DskipTests=true clean package
 
 # Crear una nueva imagen basada en OpenJDK 11
-FROM eclipse-temurin:17-jdk-jammy
+FROM eclipse-temurin:17-jdk
 
 # Exponer el puerto que utilizará la aplicación
 EXPOSE 8080
@@ -21,4 +21,5 @@ EXPOSE 8080
 COPY --from=build /app/target/Peugeot-0.0.1-SNAPSHOT.jar /app/Peugeot-0.0.1-SNAPSHOT.jar
 
 # Establecer el punto de entrada para ejecutar la aplicación
-ENTRYPOINT ["java", "-jar", "/app/Peugeot-0.0.1-SNAPSHOT.jar"]
+# ENTRYPOINT ["java", "-jar", "/app/Peugeot-0.0.1-SNAPSHOT.jar"]
+CMD ["java","-Djava.security.egd=file:/dev/./urandom", "-jar", "/app/Peugeot-0.0.1-SNAPSHOT.jar"]
