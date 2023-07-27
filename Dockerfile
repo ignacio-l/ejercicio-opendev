@@ -1,6 +1,6 @@
 
 # Usar una imagen base con JDK 11 y Maven
-FROM maven:3.6.3-openjdk-17-oracle AS build
+FROM maven:3.6.3-openjdk-17 AS build
 
 # Establecer un directorio de trabajo
 WORKDIR /app
@@ -9,10 +9,14 @@ WORKDIR /app
 COPY . /app
 
 # Ejecutar Maven para construir el proyecto
-RUN mvn clean
+RUN mvn -Dmaven.test.skip=true -DskipTests=true clean package
 
 # Crear una nueva imagen basada en OpenJDK 11
+<<<<<<< HEAD
 FROM eclipse-temurin:17-jdk-jammy
+=======
+FROM eclipse-temurin:17-jdk
+>>>>>>> 6ad692eacdebf77606ba0db1725cd1425bb27a97
 
 # Exponer el puerto que utilizará la aplicación
 EXPOSE 8080
@@ -21,4 +25,5 @@ EXPOSE 8080
 COPY --from=build /app/target/Peugeot-0.0.1-SNAPSHOT.jar /app/Peugeot-0.0.1-SNAPSHOT.jar
 
 # Establecer el punto de entrada para ejecutar la aplicación
-ENTRYPOINT ["java", "-jar", "/app/Peugeot-0.0.1-SNAPSHOT.jar"]
+# ENTRYPOINT ["java", "-jar", "/app/Peugeot-0.0.1-SNAPSHOT.jar"]
+CMD ["java","-Djava.security.egd=file:/dev/./urandom", "-jar", "/app/Peugeot-0.0.1-SNAPSHOT.jar"]
