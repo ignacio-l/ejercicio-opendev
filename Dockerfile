@@ -12,7 +12,7 @@ COPY . /app
 RUN mvn clean
 
 # Crear una nueva imagen basada en OpenJDK 11
-FROM openjdk:17-jre
+FROM eclipse-temurin:17-jdk-jammy
 
 # Exponer el puerto que utilizará la aplicación
 EXPOSE 8080
